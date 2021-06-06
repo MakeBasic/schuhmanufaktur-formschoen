@@ -303,4 +303,132 @@ a {
         background-color: #fff;
         height: auto; } }
 
+.jubilaeum-section {
+  background-color: #1D1D1D; }
+  @media only screen and (min-width: 768px) {
+    .jubilaeum-section {
+      height: 100vh;
+      min-height: 880px; } }
+  .jubilaeum-section .jubilaeum-section-inner {
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (min-width: 768px) {
+      .jubilaeum-section .jubilaeum-section-inner {
+        flex-direction: row; } }
+    .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text {
+      display: block;
+      color: #fff;
+      max-width: 300px;
+      text-align: center;
+      margin: 10vh auto; }
+      @media only screen and (min-width: 576px) {
+        .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text {
+          max-width: 400px;
+          margin: 12vh auto; } }
+      @media only screen and (min-width: 768px) {
+        .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text {
+          margin: 13vh auto; } }
+      .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2 {
+        font-size: 29px;
+        margin-bottom: 10px;
+        position: relative; }
+        @media only screen and (min-width: 480px) {
+          .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2 {
+            font-size: 40px; } }
+        @media only screen and (min-width: 768px) {
+          .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2 {
+            font-size: 48px; } }
+        .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2:before {
+          content: "";
+          position: absolute;
+          left: -25px;
+          top: -111px;
+          background-image: url(./../images/lorbeergranz.png);
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 350px;
+          height: 350px; }
+          @media only screen and (min-width: 576px) {
+            .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2:before {
+              left: -53vw; } }
+          @media only screen and (min-width: 768px) {
+            .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2:before {
+              left: -34vw; } }
+          @media only screen and (min-width: 1024px) {
+            .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2:before {
+              left: -24vw; } }
+          @media only screen and (min-width: 1440px) {
+            .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2:before {
+              left: -21vw; } }
+        .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2:after {
+          display: block;
+          position: absolute;
+          content: "";
+          width: 1px;
+          height: 90px;
+          left: 150px;
+          top: 135px;
+          background-color: #fff; }
+          @media only screen and (min-width: 576px) {
+            .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text h2:after {
+              left: 200px; } }
+      .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text span {
+        font-size: 20px;
+        font-style: italic; }
+      .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p {
+        position: relative;
+        margin-top: 160px; }
+        @media only screen and (min-width: 768px) {
+          .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p {
+            margin-top: 180px; } }
+        @media only screen and (min-width: 768px) {
+          .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p:after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 90px;
+            left: 150px;
+            top: 135px;
+            background-color: #fff;
+            top: 300px; } }
+  @media only screen and (min-width: 768px) and (min-width: 576px) {
+    .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p:after {
+      left: 200px; } }
+
+      .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text .jubilaeum-lorbeergranz {
+        background-image: url(./../images/lorbeergranz.png); }
+    .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider {
+      display: block;
+      height: 400px;
+      width: 100vw;
+      overflow: hidden; }
+      @media only screen and (min-width: 768px) {
+        .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider {
+          height: 100vh;
+          width: 40vw; } }
+      @media only screen and (min-width: 960px) {
+        .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider {
+          width: 50vw; } }
+      @media only screen and (min-width: 1280px) {
+        .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider {
+          width: 60vw; } }
+      .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider img {
+        width: 100vw !important;
+        height: auto !important; }
+        @media only screen and (min-width: 768px) {
+          .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider img {
+            height: 100vh !important;
+            width: auto !important; } }
+
+.colmenu-section .colmenu-section-inner {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 768px) {
+    .colmenu-section .colmenu-section-inner {
+      flex-direction: row; } }
+  .colmenu-section .colmenu-section-inner .colmenu-item {
+    display: block; }
+
 /*# sourceMappingURL=main.css.map */

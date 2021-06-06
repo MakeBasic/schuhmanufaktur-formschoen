@@ -17,6 +17,19 @@ $(".topbar-burger-container").click(function() {
 });
 
 
+$( window ).resize(function() {
+  heroResize();
+});
+
+$('.jubilaeum-section-slider').slick({
+    autoplay:true,
+    speed: 500,
+    autoplaySpeed:3500,
+    arrows:true,
+    prevArrow: $('.prev-slide'),
+    nextArrow: $('.next-slide')
+});
+
 function heroResize() {
   var topH3 = $('.hero-section-inner h3').offset().top;
   var topLogo = $('.hero-section-inner .logo-icon').offset().top;
@@ -32,6 +45,4 @@ function heroResize() {
   $('.hero-fourd-line').css('height', topLogo - topH3 - 80);
 }
 
-$( window ).resize(function() {
-  heroResize();
-});
+

@@ -26,3 +26,18 @@
         }
     }
 }
+
+@mixin after-line {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 90px;
+    left: 150px;
+    top: 135px;
+    background-color: $white;
+
+    @include bp(small2) {
+        left: 200px;
+    }
+}

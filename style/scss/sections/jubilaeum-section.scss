@@ -1,0 +1,138 @@
+.jubilaeum-section {
+    background-color: $background-darkgrey;
+    
+    @include bp(medium1) {
+        height: 100vh;
+        min-height: 880px;
+    }
+
+    .jubilaeum-section-inner {
+        display: flex;
+        flex-direction: column;
+
+        @include bp(medium1) {
+            flex-direction: row;
+        }
+
+        .jubilaeum-section-text {
+            display: block;
+            color: $white;
+            max-width: 300px;
+            text-align: center;
+            margin: 10vh auto;
+
+            @include bp(small2) {
+                max-width: 400px;
+                margin: 12vh auto;
+            }
+
+            @include bp(medium1) {
+                margin: 13vh auto;
+            }
+
+            h2 {
+                font-size: 29px;
+                margin-bottom: 10px;
+                position: relative;
+
+                @include bp(small1) {
+                    font-size: 40px; 
+                }
+
+                @include bp(medium1) {
+                    font-size: 48px; 
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: -25px;
+                    top: -111px;
+                    background-image: url(./../images/lorbeergranz.png);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 350px;
+                    height: 350px;
+
+                    @include bp(small2) {
+                        left: -53vw;
+                    }
+
+                    @include bp(medium1) {
+                        left: -34vw;
+                    }
+
+                    @include bp(large1) {
+                        left: -24vw;
+                    }
+
+                    @include bp(large3) {
+                        left: -21vw;
+                    }
+                }
+
+                &:after {
+                    @include after-line;
+                }
+            }
+
+            span {
+                font-size: 20px;
+                font-style: italic;
+            }
+
+            p {
+                position: relative;
+                margin-top: 160px;
+
+                @include bp(medium1) {
+                    margin-top: 180px;
+                }
+
+                &:after {
+                    @include bp(medium1) {
+                        @include after-line;
+                        top: 300px;
+                    }
+                }
+            }
+
+
+
+            .jubilaeum-lorbeergranz {
+                background-image: url(./../images/lorbeergranz.png);
+            }
+        }
+
+        .jubilaeum-section-slider {
+            display: block;
+            height: 400px;
+            width: 100vw;
+            overflow: hidden;
+
+            @include bp(medium1) {
+                height: 100vh;
+                width: 40vw;
+            }
+
+            @include bp(medium3) {
+                width: 50vw;
+            }
+
+            @include bp(large2) {
+                width: 60vw;
+            }
+
+            img {
+                width: 100vw !important;
+                height: auto !important;
+
+                @include bp(medium1) {
+                    height: 100vh !important;
+                    width: auto !important;
+                }
+            }
+        }
+    }
+}

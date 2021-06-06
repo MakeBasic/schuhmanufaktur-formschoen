@@ -1,0 +1,31 @@
+.colmenu-section {
+    .colmenu-section-inner {
+        display: flex;
+        flex-direction: column;
+
+        @include bp(medium1) {
+            flex-direction: row;
+        }
+
+        .colmenu-item {
+            display: block;
+
+        }
+
+        .colmenu-item-chronologie {
+            
+        }
+
+        .colmenu-item-leistungen {
+
+        }
+
+        .colmenu-item-masschuhe {
+
+        }
+
+        .colmenu-item-pflegetipps {
+
+        }
+    }
+}
