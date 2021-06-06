@@ -10,7 +10,7 @@
         .topbar-burger-container {
             position: absolute;
             top: 40px;
-            right: 25px;
+            right: 0px;
             padding: 8px 22px 10px 22px;
             display: inline-block;
             cursor: pointer;
@@ -23,6 +23,7 @@
         
             @include bp(small1) {
                 margin-right: 15px;
+                right: 25px;
             }
 
             @include bp(small2) {
