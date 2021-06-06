@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Quelle: https://google-webfonts-helper.herokuapp.com/fonts/playfair-display?subsets=latin */
 /* playfair-display-regular - latin */
 @font-face {
@@ -35,6 +36,11 @@ li {
 
 a {
   text-decoration: none; }
+
+h1,
+h2,
+h3 {
+  font-weight: normal; }
 
 .noscroll .topbar .topbar-logo {
   display: none; }
@@ -476,5 +482,45 @@ a {
       background-image: linear-gradient(180deg, transparent 43.75%, rgba(0, 0, 0, 0.5) 70.83%), url(./../images/menu_massschuhe.png); }
     .colmenu-section .colmenu-section-inner .colmenu-item-pflegetipps {
       background-image: linear-gradient(180deg, transparent 43.75%, rgba(0, 0, 0, 0.5) 70.83%), url(./../images/menu_pflegetipps.png); }
+
+.vote-section {
+  position: relative; }
+  .vote-section .vote-section-inner {
+    padding: 60px; }
+    .vote-section .vote-section-inner h2 {
+      text-align: center;
+      font-size: 29px; }
+      @media only screen and (min-width: 576px) {
+        .vote-section .vote-section-inner h2 {
+          font-size: 34px; } }
+      @media only screen and (min-width: 768px) {
+        .vote-section .vote-section-inner h2 {
+          font-size: 40px; } }
+  .vote-section .vote-slider-container {
+    text-align: center;
+    max-width: 700px;
+    padding: 50px;
+    margin: auto; }
+    .vote-section .vote-slider-container .vote-slide {
+      display: block;
+      padding: 50px; }
+    .vote-section .vote-slider-container p {
+      position: relative;
+      display: block;
+      margin: auto; }
+      .vote-section .vote-slider-container p::before, .vote-section .vote-slider-container p::after {
+        display: block;
+        content: "❝";
+        position: absolute;
+        font-size: 90px;
+        color: #D7D7D7;
+        width: 80px;
+        height: 80px; }
+      .vote-section .vote-slider-container p:before {
+        top: -80px;
+        left: -60px; }
+      .vote-section .vote-slider-container p:after {
+        top: 20px;
+        left: 484px; }
 
 /*# sourceMappingURL=main.css.map */

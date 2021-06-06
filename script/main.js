@@ -30,6 +30,15 @@ $('.jubilaeum-section-slider').slick({
     nextArrow: $('.next-slide')
 });
 
+$('.vote-slider-container').slick({
+  autoplay:true,
+  speed: 500,
+  autoplaySpeed:3500,
+  arrows:true,
+  prevArrow: $('.prev-vote-slide'),
+  nextArrow: $('.next-vote-slide')
+});
+
 function heroResize() {
   var topH3 = $('.hero-section-inner h3').offset().top;
   var topLogo = $('.hero-section-inner .logo-icon').offset().top;

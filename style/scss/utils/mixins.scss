@@ -41,3 +41,16 @@
         left: 200px;
     }
 }
+
+@mixin headline-h2 {
+    text-align: center;
+    font-size: 29px;
+
+    @include bp(small2) {
+        font-size: 34px;
+    }
+
+    @include bp(medium1) {
+        font-size: 40px;
+    }
+}
