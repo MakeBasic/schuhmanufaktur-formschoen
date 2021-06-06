@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "ACAA,+FAA+F;AAC/F,sCAAsC;AACtC,UAAU;EACN,WAAW,EAAE,kBAAkB;EAC/B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,sDAAsD;EAAE,sBAAsB;EACnF,GAAG,EAAE,SAAS,EACT,6DAA6D,CAAC,2BAA2B,EACzF,wDAAwD,CAAC,eAAe,EACxE,uDAAuD,CAAC,cAAc,EACtE,sDAAsD,CAAC,kBAAkB,EACzE,sEAAsE,CAAC,aAAa;EAAE,gBAAgB;;;AAE7G,kCAAkC;AAClC,UAAU;EACR,WAAW,EAAE,kBAAkB;EAC/B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,kDAAkD;EAAE,sBAAsB;EAC/E,GAAG,EAAE,SAAS,EACT,yDAAyD,CAAC,2BAA2B,EACrF,oDAAoD,CAAC,eAAe,EACpE,mDAAmD,CAAC,cAAc,EAClE,kDAAkD,CAAC,kBAAkB,EACrE,kEAAkE,CAAC,aAAa;EAAE,gBAAgB;;;AIzB3G,yBAAyB;AACzB,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,kBAAkB;CAClC",
+    "sources": [
+        "all.scss",
+        "utils/_typography.scss",
+        "utils/_bp.scss",
+        "utils/variables.scss",
+        "utils/colors.scss",
+        "utils/basics.scss",
+        "partials/menu.scss",
+        "partials/footer.scss",
+        "partials/chronologie.scss",
+        "partials/leistungen.scss",
+        "partials/massschuh.scss",
+        "partials/pflegetipps.scss",
+        "sections/hero-section.scss",
+        "sections/jubilaeum-section.scss",
+        "sections/colmenu-section.scss",
+        "sections/vote-section.scss"
+    ],
+    "names": [],
+    "file": "all.css"
+}

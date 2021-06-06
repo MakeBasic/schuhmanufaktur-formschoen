@@ -1,0 +1,28 @@
+/* Quelle: https://google-webfonts-helper.herokuapp.com/fonts/playfair-display?subsets=latin */
+/* playfair-display-regular - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/playfair-display-v22-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/playfair-display-v22-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair-display-v22-latin-regular.woff2") format("woff2"), url("../fonts/playfair-display-v22-latin-regular.woff") format("woff"), url("../fonts/playfair-display-v22-latin-regular.ttf") format("truetype"), url("../fonts/playfair-display-v22-latin-regular.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
+}
+
+/* playfair-display-700 - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/playfair-display-v22-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/playfair-display-v22-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair-display-v22-latin-700.woff2") format("woff2"), url("../fonts/playfair-display-v22-latin-700.woff") format("woff"), url("../fonts/playfair-display-v22-latin-700.ttf") format("truetype"), url("../fonts/playfair-display-v22-latin-700.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
+}
+
+/* global basic styles */
+body {
+  font-family: "Playfair Display";
+}
+/*# sourceMappingURL=all.css.map */
