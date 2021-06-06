@@ -4,6 +4,24 @@
 .page-header {
     .topbar-logo {
         @include logo-icon;
+
+        @include bp(small2) {
+            width: 90px;
+            height: 90px;
+            border-radius: 45px;
+        }
+    
+        img {
+            width: 40px;
+            margin-top: 7px;
+            margin-left: 13px;
+    
+            @include bp(small2) {
+                width: 60px;
+                margin-top: 10px;
+                margin-left: 18px;
+            }
+        }
     }
 
     .topbar {

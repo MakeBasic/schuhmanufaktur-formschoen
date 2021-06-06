@@ -68,6 +68,20 @@ h3 {
         width: 70px;
         margin-top: 10px;
         margin-left: 18px; } }
+  @media only screen and (min-width: 576px) {
+    .page-header .topbar-logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 45px; } }
+  .page-header .topbar-logo img {
+    width: 40px;
+    margin-top: 7px;
+    margin-left: 13px; }
+    @media only screen and (min-width: 576px) {
+      .page-header .topbar-logo img {
+        width: 60px;
+        margin-top: 10px;
+        margin-left: 18px; } }
 .page-header .topbar .topbar-burger-container {
   position: fixed;
   top: 40px;
@@ -186,22 +200,61 @@ h3 {
     justify-content: center;
     align-items: center; }
 
+.page-header-grey {
+  position: relative;
+  height: 490px;
+  background-color: #1D1D1D;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .page-header-grey .page-header-inner {
+    text-align: center;
+    color: #fff;
+    padding: 20px; }
+    .page-header-grey .page-header-inner h1 {
+      text-align: center;
+      font-size: 29px;
+      border: 1px solid #fff;
+      display: inline-block;
+      padding: 8px 15px 10px 15px;
+      margin-bottom: 0; }
+      @media only screen and (min-width: 576px) {
+        .page-header-grey .page-header-inner h1 {
+          font-size: 34px; } }
+      @media only screen and (min-width: 768px) {
+        .page-header-grey .page-header-inner h1 {
+          font-size: 40px; } }
+    .page-header-grey .page-header-inner h2 {
+      text-align: center;
+      font-size: 29px; }
+      @media only screen and (min-width: 576px) {
+        .page-header-grey .page-header-inner h2 {
+          font-size: 34px; } }
+      @media only screen and (min-width: 768px) {
+        .page-header-grey .page-header-inner h2 {
+          font-size: 40px; } }
+    .page-header-grey .page-header-inner .page-header-lorbeergranz {
+      background-image: url(./../images/lorbeergranz.png);
+      width: 70vw;
+      height: auto; }
+
 .page-footer .page-footer-inner {
   position: relative; }
-  .page-footer .page-footer-inner:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -55px;
-    right: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 100px;
-    background-color: #909090; }
-    @media only screen and (min-width: 768px) {
-      .page-footer .page-footer-inner:before {
-        top: -75px;
-        height: 150px; } }
+  @media only screen and (min-width: 480px) {
+    .page-footer .page-footer-inner:before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: -55px;
+      right: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 100px;
+      background-color: #909090; } }
+  @media only screen and (min-width: 768px) {
+    .page-footer .page-footer-inner:before {
+      top: -75px;
+      height: 150px; } }
   .page-footer .page-footer-inner .contact {
     text-align: center;
     padding: 80px 5px;
@@ -256,6 +309,28 @@ h3 {
     @media only screen and (min-width: 576px) {
       .page-footer .page-footer-inner .footer-bar {
         flex-direction: row; } }
+
+.page-impressum {
+  background-color: #FAFAFA;
+  /* With line on top inner-element*/
+  padding: 90px 5px;
+  padding-top: 120px; }
+  @media only screen and (min-width: 576px) {
+    .page-impressum {
+      padding: 90px 20px; } }
+  @media only screen and (min-width: 768px) {
+    .page-impressum {
+      padding: 140px 50px;
+      padding-top: 170px; } }
+  .page-impressum p {
+    text-align: center;
+    font-size: 15px; }
+    @media only screen and (min-width: 576px) {
+      .page-impressum p {
+        font-size: 18px; } }
+    @media only screen and (min-width: 768px) {
+      .page-impressum p {
+        font-size: 20px; } }
 
 .hero-section {
   background-color: #000; }

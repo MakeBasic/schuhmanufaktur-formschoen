@@ -28,15 +28,17 @@
 }
 
 @mixin section-inner-before-line {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -55px;
-    right: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 100px;
-    background-color: $space-line;
+    @include bp(small1) {
+        display: block;
+        content: "";
+        position: absolute;
+        top: -55px;
+        right: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 100px;
+        background-color: $space-line;
+    }
 
     @include bp(medium1) {
         top: -75px;
@@ -93,5 +95,20 @@
 
     @include bp(medium1) {
         font-size: 20px;
+    }
+}
+
+@mixin padding-normal {
+    /* With line on top inner-element*/
+    padding: 90px 5px;
+    padding-top: 120px;
+
+    @include bp(small2) {
+        padding: 90px 20px;
+    }
+
+    @include bp(medium1) {
+        padding: 140px 50px;
+        padding-top: 170px;
     }
 }

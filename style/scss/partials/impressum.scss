@@ -1,0 +1,9 @@
+.page-impressum {
+    background-color: $background-lightgrey;
+    @include padding-normal;
+
+    p {
+        text-align: center;
+        @include text-normal;
+    }
+}

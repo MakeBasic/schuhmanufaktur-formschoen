@@ -12,9 +12,11 @@ $(".main-menu a").click(function() {
     closeMenu($(".topbar-burger-container"));
 })
 
-
 $( window ).resize(function() {
-  heroResize();
+    if($('.hero-section-inner') !== null) {
+      console.log( "ready!!!!" );
+        heroResize();
+    }
 });
 
 $('.jubilaeum-section-slider').slick({
