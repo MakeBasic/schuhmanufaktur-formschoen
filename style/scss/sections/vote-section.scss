@@ -1,8 +1,17 @@
 .vote-section {
     position: relative;
+    background-color: $background-lightgrey;
 
     .vote-section-inner {
-        padding: 60px;
+        padding: 5px;
+
+        @include bp(small2) {
+            padding: 20px;
+        }
+
+        @include bp(medium1) {
+            padding: 50px;
+        }
         
         h2 {
             @include headline-h2;
@@ -24,6 +33,7 @@
             position: relative;
             display: block;
             margin: auto;
+            @include text-normal;
 
             &::before,
             &::after {
@@ -42,8 +52,12 @@
             }
 
             &:after {
-                top: 20px;
+                top: 100px;
                 left: 484px;
+
+                @include bp(small2) {
+                    top: 20px;
+                }
             }
 
         }

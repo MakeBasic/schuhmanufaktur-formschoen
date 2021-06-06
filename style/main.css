@@ -69,7 +69,7 @@ h3 {
         margin-top: 10px;
         margin-left: 18px; } }
 .page-header .topbar .topbar-burger-container {
-  position: absolute;
+  position: fixed;
   top: 40px;
   right: 0px;
   padding: 8px 22px 10px 22px;
@@ -153,7 +153,7 @@ h3 {
         transform: rotate(0deg); } }
 .page-header .main-menu-container {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -185,6 +185,77 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.page-footer .page-footer-inner {
+  position: relative; }
+  .page-footer .page-footer-inner:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -55px;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100px;
+    background-color: #909090; }
+    @media only screen and (min-width: 768px) {
+      .page-footer .page-footer-inner:before {
+        top: -75px;
+        height: 150px; } }
+  .page-footer .page-footer-inner .contact {
+    text-align: center;
+    padding: 80px 5px;
+    padding-top: 120px; }
+    @media only screen and (min-width: 576px) {
+      .page-footer .page-footer-inner .contact {
+        padding: 80px 20px; } }
+    @media only screen and (min-width: 768px) {
+      .page-footer .page-footer-inner .contact {
+        padding: 120px 50px;
+        padding-top: 160px; } }
+    .page-footer .page-footer-inner .contact h2 {
+      text-align: center;
+      font-size: 29px; }
+      @media only screen and (min-width: 576px) {
+        .page-footer .page-footer-inner .contact h2 {
+          font-size: 34px; } }
+      @media only screen and (min-width: 768px) {
+        .page-footer .page-footer-inner .contact h2 {
+          font-size: 40px; } }
+    .page-footer .page-footer-inner .contact p {
+      font-size: 15px; }
+      @media only screen and (min-width: 576px) {
+        .page-footer .page-footer-inner .contact p {
+          font-size: 18px; } }
+      @media only screen and (min-width: 768px) {
+        .page-footer .page-footer-inner .contact p {
+          font-size: 20px; } }
+    .page-footer .page-footer-inner .contact span {
+      color: #909090; }
+  .page-footer .page-footer-inner .footer-bar {
+    position: relative;
+    background-color: #FAFAFA;
+    width: 100vw;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column; }
+    .page-footer .page-footer-inner .footer-bar .footer-logo {
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 50px; }
+    .page-footer .page-footer-inner .footer-bar .socialmedia-icons {
+      display: block;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .page-footer .page-footer-inner .footer-bar .socialmedia-icons img {
+        padding: 8px; }
+    @media only screen and (min-width: 576px) {
+      .page-footer .page-footer-inner .footer-bar {
+        flex-direction: row; } }
 
 .hero-section {
   background-color: #000; }
@@ -384,7 +455,14 @@ h3 {
         font-style: italic; }
       .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p {
         position: relative;
-        margin-top: 160px; }
+        margin-top: 160px;
+        font-size: 15px; }
+        @media only screen and (min-width: 576px) {
+          .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p {
+            font-size: 18px; } }
+        @media only screen and (min-width: 768px) {
+          .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p {
+            font-size: 20px; } }
         @media only screen and (min-width: 768px) {
           .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p {
             margin-top: 180px; } }
@@ -398,7 +476,8 @@ h3 {
             left: 150px;
             top: 135px;
             background-color: #fff;
-            top: 300px; } }
+            top: 445px;
+            height: 70px; } }
   @media only screen and (min-width: 768px) and (min-width: 576px) {
     .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p:after {
       left: 200px; } }
@@ -484,9 +563,16 @@ h3 {
       background-image: linear-gradient(180deg, transparent 43.75%, rgba(0, 0, 0, 0.5) 70.83%), url(./../images/menu_pflegetipps.png); }
 
 .vote-section {
-  position: relative; }
+  position: relative;
+  background-color: #FAFAFA; }
   .vote-section .vote-section-inner {
-    padding: 60px; }
+    padding: 5px; }
+    @media only screen and (min-width: 576px) {
+      .vote-section .vote-section-inner {
+        padding: 20px; } }
+    @media only screen and (min-width: 768px) {
+      .vote-section .vote-section-inner {
+        padding: 50px; } }
     .vote-section .vote-section-inner h2 {
       text-align: center;
       font-size: 29px; }
@@ -507,7 +593,14 @@ h3 {
     .vote-section .vote-slider-container p {
       position: relative;
       display: block;
-      margin: auto; }
+      margin: auto;
+      font-size: 15px; }
+      @media only screen and (min-width: 576px) {
+        .vote-section .vote-slider-container p {
+          font-size: 18px; } }
+      @media only screen and (min-width: 768px) {
+        .vote-section .vote-slider-container p {
+          font-size: 20px; } }
       .vote-section .vote-slider-container p::before, .vote-section .vote-slider-container p::after {
         display: block;
         content: "❝";
@@ -520,7 +613,10 @@ h3 {
         top: -80px;
         left: -60px; }
       .vote-section .vote-slider-container p:after {
-        top: 20px;
+        top: 100px;
         left: 484px; }
+        @media only screen and (min-width: 576px) {
+          .vote-section .vote-slider-container p:after {
+            top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

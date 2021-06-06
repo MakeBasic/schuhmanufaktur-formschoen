@@ -8,7 +8,7 @@
 
     .topbar {
         .topbar-burger-container {
-            position: absolute;
+            position: fixed;
             top: 40px;
             right: 0px;
             padding: 8px 22px 10px 22px;
@@ -132,7 +132,7 @@
     }
     .main-menu-container {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;

@@ -85,6 +85,7 @@
             p {
                 position: relative;
                 margin-top: 160px;
+                @include text-normal;
 
                 @include bp(medium1) {
                     margin-top: 180px;
@@ -93,7 +94,8 @@
                 &:after {
                     @include bp(medium1) {
                         @include after-line;
-                        top: 300px;
+                        top: 445px;
+                        height: 70px;
                     }
                 }
             }

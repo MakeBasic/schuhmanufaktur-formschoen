@@ -4,17 +4,13 @@ $( document ).ready(function() {
 });
 
 $(".topbar-burger-container").click(function() {
-    console.log( "menu" );
-    $(this).toggleClass('cross');
-    $('html').toggleClass('noscroll');
-    $('.main-menu-container').toggleClass('main-menu-opened');
-
-    if ($(this).hasClass("cross")) {
-        $('.topbar-burger-typo').html("Zurück");
-      } else {
-        $('.topbar-burger-typo').html("Menü");
-      }
+    closeMenu(this);
 });
+
+
+$(".main-menu a").click(function() {
+    closeMenu($(".topbar-burger-container"));
+})
 
 
 $( window ).resize(function() {
@@ -24,7 +20,7 @@ $( window ).resize(function() {
 $('.jubilaeum-section-slider').slick({
     autoplay:true,
     speed: 500,
-    autoplaySpeed:3500,
+    autoplaySpeed:4000,
     arrows:true,
     prevArrow: $('.prev-slide'),
     nextArrow: $('.next-slide')
@@ -33,11 +29,25 @@ $('.jubilaeum-section-slider').slick({
 $('.vote-slider-container').slick({
   autoplay:true,
   speed: 500,
-  autoplaySpeed:3500,
+  autoplaySpeed:4000,
   arrows:true,
   prevArrow: $('.prev-vote-slide'),
   nextArrow: $('.next-vote-slide')
 });
+
+
+function closeMenu(el) {
+  console.log( "menu" );
+    $(el).toggleClass('cross');
+    $('html').toggleClass('noscroll');
+    $('.main-menu-container').toggleClass('main-menu-opened');
+
+    if ($(el).hasClass("cross")) {
+        $('.topbar-burger-typo').html("Zurück");
+    } else {
+        $('.topbar-burger-typo').html("Menü");
+    }
+}
 
 function heroResize() {
   var topH3 = $('.hero-section-inner h3').offset().top;
