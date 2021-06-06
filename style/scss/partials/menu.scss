@@ -3,41 +3,10 @@
 }
 .page-header {
     .topbar-logo {
-        position: fixed;
-        top: 40px;
-        left: 45px;
-        border: 1px solid white;
-        width: 60px;
-        height: 60px;
-        border-radius: 30px;
-        background-color: $menu-icon-background;
-
-        @include bp(small2) {
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-        }
-
-        img {
-            width: 40px;
-            margin-top: 7px;
-            margin-left: 13px;
-
-            @include bp(small2) {
-                width: 70px;
-                margin-top: 10px;
-                margin-left: 18px;
-            }
-        }
+        @include logo-icon;
     }
 
     .topbar {
-        .topbar-logo {
-            @include bp(small2) {
-                display: none;
-            }
-        }
-
         .topbar-burger-container {
             position: absolute;
             top: 40px;

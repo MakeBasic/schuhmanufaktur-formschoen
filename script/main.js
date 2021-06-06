@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     console.log( "ready!" );
+    heroResize();
 });
 
 $(".topbar-burger-container").click(function() {
@@ -13,4 +14,24 @@ $(".topbar-burger-container").click(function() {
       } else {
         $('.topbar-burger-typo').html("Menü");
       }
+});
+
+
+function heroResize() {
+  var topH3 = $('.hero-section-inner h3').offset().top;
+  var topLogo = $('.hero-section-inner .logo-icon').offset().top;
+  var topH2 = $('.hero-section-inner h2').offset().top;
+
+  $('.hero-second-line').css('top', (topH3 - $('.hero-section-inner h3').height));
+  $('.hero-second-line').css('height', topLogo - topH3 - 80);
+
+  $('.hero-third-line').css('top', topLogo + 130);
+  $('.hero-third-line').css('height', topH2 - topLogo - 130);
+
+  $('.hero-fourd-line').css('top', (topH2 - $('.hero-section-inner h2').height) - 630);
+  $('.hero-fourd-line').css('height', topLogo - topH3 - 80);
+}
+
+$( window ).resize(function() {
+  heroResize();
 });

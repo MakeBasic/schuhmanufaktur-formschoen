@@ -62,9 +62,6 @@ a {
         width: 70px;
         margin-top: 10px;
         margin-left: 18px; } }
-@media only screen and (min-width: 576px) {
-  .page-header .topbar .topbar-logo {
-    display: none; } }
 .page-header .topbar .topbar-burger-container {
   position: absolute;
   top: 40px;
@@ -196,10 +193,65 @@ a {
   .hero-section h1 {
     font-size: 58px;
     text-align: center;
-    margin: 30px 45px; }
+    margin: 30px 45px;
+    font-weight: 400; }
   .hero-section h3 {
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10vh;
+    color: #909090;
+    text-align: center; }
+    @media only screen and (min-width: 576px) {
+      .hero-section h3:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        top: 197px;
+        left: 270px;
+        background-color: #fff;
+        height: 8vh; } }
   .hero-section h2 {
-    font-size: 58px; }
+    font-size: 58px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 37vh; }
+  .hero-section .logo-icon {
+    position: fixed;
+    top: 40px;
+    left: 45px;
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 45vh;
+    left: 220px;
+    background-color: transparent; }
+    @media only screen and (min-width: 576px) {
+      .hero-section .logo-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px; } }
+    .hero-section .logo-icon img {
+      width: 40px;
+      margin-top: 7px;
+      margin-left: 13px; }
+      @media only screen and (min-width: 576px) {
+        .hero-section .logo-icon img {
+          width: 70px;
+          margin-top: 10px;
+          margin-left: 18px; } }
+  @media only screen and (min-width: 576px) {
+    .hero-section .hero-second-line,
+    .hero-section .hero-third-line,
+    .hero-section .hero-fourd-line {
+      display: block;
+      position: absolute;
+      width: 1px;
+      left: 270px;
+      background-color: #fff;
+      height: auto; } }
 
 /*# sourceMappingURL=main.css.map */

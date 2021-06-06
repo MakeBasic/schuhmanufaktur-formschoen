@@ -16,13 +16,56 @@
         font-size: 58px;
         text-align: center;
         margin: 30px 45px;
+        font-weight: 400;
     }
 
     h3 {
         font-size: 24px;
+        font-weight: 400;
+        margin-top: 10vh;
+        color: $subheadline-grey;
+        text-align: center;
+
+        &:before {
+            @include bp(small2) {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 1px;
+                top: 197px;
+                left: 270px;
+                background-color: $white;
+                height: 8vh;
+            }
+        }
     }
 
     h2 {
         font-size: 58px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 37vh;
     }
+
+    .logo-icon {
+        @include logo-icon;
+        position: absolute;
+        top: 45vh;
+        left: 220px;
+        background-color: $transparent;
+    }
+
+    .hero-second-line,
+    .hero-third-line,
+    .hero-fourd-line {
+        @include bp(small2) {
+            display: block;
+            position: absolute;
+            width: 1px;
+            left: 270px;
+            background-color: $white;
+            height: auto;
+        }
+    }
+
 }
