@@ -422,13 +422,59 @@ a {
             height: 100vh !important;
             width: auto !important; } }
 
-.colmenu-section .colmenu-section-inner {
-  display: flex;
-  flex-direction: column; }
-  @media only screen and (min-width: 768px) {
-    .colmenu-section .colmenu-section-inner {
-      flex-direction: row; } }
-  .colmenu-section .colmenu-section-inner .colmenu-item {
-    display: block; }
+.colmenu-section {
+  position: relative;
+  height: 100vh; }
+  .colmenu-section .colmenu-section-inner {
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (min-width: 768px) {
+      .colmenu-section .colmenu-section-inner {
+        flex-direction: row; } }
+    .colmenu-section .colmenu-section-inner .colmenu-item {
+      display: block;
+      height: 25vh;
+      width: 100vw;
+      display: flex;
+      align-items: flex-end; }
+      @media only screen and (min-width: 768px) {
+        .colmenu-section .colmenu-section-inner .colmenu-item {
+          height: 100vh;
+          width: 25vw; } }
+      .colmenu-section .colmenu-section-inner .colmenu-item:hover > .colmenu-text {
+        padding-bottom: 25px; }
+        @media only screen and (min-width: 768px) {
+          .colmenu-section .colmenu-section-inner .colmenu-item:hover > .colmenu-text {
+            padding-bottom: 40px; } }
+      .colmenu-section .colmenu-section-inner .colmenu-item .colmenu-text {
+        width: 100%;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400 !important;
+        text-align: center;
+        padding-bottom: 15px;
+        transition: 0.3s; }
+        @media only screen and (min-width: 768px) {
+          .colmenu-section .colmenu-section-inner .colmenu-item .colmenu-text {
+            font-size: 24px;
+            padding-bottom: 30px; } }
+        @media only screen and (min-width: 1280px) {
+          .colmenu-section .colmenu-section-inner .colmenu-item .colmenu-text {
+            font-size: 29px; } }
+    .colmenu-section .colmenu-section-inner .colmenu-item-chronologie,
+    .colmenu-section .colmenu-section-inner .colmenu-item-leistungen,
+    .colmenu-section .colmenu-section-inner .colmenu-item-masschuhe,
+    .colmenu-section .colmenu-section-inner .colmenu-item-pflegetipps {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .colmenu-section .colmenu-section-inner .colmenu-item-chronologie {
+      background-image: linear-gradient(180deg, transparent 43.75%, rgba(0, 0, 0, 0.5) 70.83%), url(./../images/menu_chronologie.jpg); }
+    .colmenu-section .colmenu-section-inner .colmenu-item-leistungen {
+      background-image: linear-gradient(180deg, transparent 43.75%, rgba(0, 0, 0, 0.5) 70.83%), url(./../images/menu_leistungen.png); }
+    .colmenu-section .colmenu-section-inner .colmenu-item-masschuhe {
+      background-image: linear-gradient(180deg, transparent 43.75%, rgba(0, 0, 0, 0.5) 70.83%), url(./../images/menu_massschuhe.png); }
+    .colmenu-section .colmenu-section-inner .colmenu-item-pflegetipps {
+      background-image: linear-gradient(180deg, transparent 43.75%, rgba(0, 0, 0, 0.5) 70.83%), url(./../images/menu_pflegetipps.png); }
 
 /*# sourceMappingURL=main.css.map */
