@@ -1,0 +1,215 @@
+.noscroll .topbar .topbar-logo {
+    display: none;
+}
+.page-header {
+    .topbar-logo {
+        position: fixed;
+        top: 40px;
+        left: 45px;
+        border: 1px solid white;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: $menu-icon-background;
+
+        @include bp(small2) {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+        img {
+            width: 40px;
+            margin-top: 7px;
+            margin-left: 13px;
+
+            @include bp(small2) {
+                width: 70px;
+                margin-top: 10px;
+                margin-left: 18px;
+            }
+        }
+    }
+
+    .topbar {
+        .topbar-logo {
+            @include bp(small2) {
+                display: none;
+            }
+        }
+
+        .topbar-burger-container {
+            position: absolute;
+            top: 40px;
+            right: 25px;
+            padding: 8px 22px 10px 22px;
+            display: inline-block;
+            cursor: pointer;
+            transform: rotate(0deg);
+            transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+            user-select: none;
+            -webkit-tap-highlight-color: $transparent;
+            z-index: 101;
+            border-radius: 18px;
+        
+            @include bp(small1) {
+                margin-right: 15px;
+            }
+
+            @include bp(small2) {
+                background-color: $menu-icon-background;
+            }
+
+            &:hover {
+                @include bp(small2) {
+                    background-color: $menu-icon-background-hover;
+                }
+            }
+            
+            .topbar-burger {
+                @include bp(small2) {
+                    display: none;
+                }
+            }
+
+            .topbar-burger-typo {
+                display: none;
+                color: $white;
+                font-size: 24px;
+
+                @include bp(small2) {
+                    display: block;
+                }
+            }
+        
+            .burger {
+                width: 24px;
+                height: 8px;
+                position: relative;
+                display: block;
+                margin: -6px auto 0;
+                top: 50%;
+
+                .bar {
+                    background: $white;
+                }
+
+                .bar2 {
+                    background: $black;
+                }
+        
+                .bar,
+                .bar2 {
+                    width: 100%;
+                    height: 2px;
+                    display: block;
+                    position: relative;
+        
+                    .noscroll & {
+                        background: $white;
+                    }
+        
+                    .scroll-offset-top & {
+                        background: $white;
+                    }
+        
+                    &.bar-top {
+                        transform: translateY(0) rotate(0deg);
+                    }
+        
+                    &.bar-mdl {
+                        transform: translateY(4px) rotate(0deg);
+                        opacity: 1;
+                    }
+        
+                    &.bar-btm {
+                        transform: translateY(8px) rotate(0deg);
+                    }
+                }
+            }
+        
+            /* Menu Openend */
+            &.cross {
+                transform: rotate(90deg);
+        
+                .bar2 {
+                    display: none;
+                }
+
+                .bar {
+                    transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+                    transition-delay: 0.2s;
+        
+                    &.bar-top {
+                        transform: translateY(5px) rotate(45deg);
+                    }
+        
+                    &.bar-mdl {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+        
+                    &.bar-btm {
+                        opacity: 0;
+                    }
+                }
+
+                @include bp(small2) {
+                    transform: rotate(0deg);
+                }
+            }
+            
+        }
+    }
+    .main-menu-container {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+
+        &.main-menu-opened {
+            display: block;
+            background-color: $black;
+            color: $white;
+
+            ul {
+                padding: 0;
+                margin-bottom: 6vh;
+            }
+    
+            li {
+                list-style: none;
+                text-align: center;
+                font-size: 20px;
+                padding: 6px;
+
+                @include bp(small2) {
+                    font-size: 36px;
+                    padding: 10px;
+                }
+
+                &:hover {
+                    a {
+                        color: $white-text-hover;
+                    }
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: $white !important;
+                }
+            }
+        }
+
+        .main-menu {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    
+}

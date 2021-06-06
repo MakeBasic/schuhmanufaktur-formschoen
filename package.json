@@ -1,0 +1,26 @@
+{
+  "name": "1b-umsetzung",
+  "version": "1.0.0",
+  "description": "MD.H Abschlussprojekt Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakeBasic/schuhmanufaktur-formschoen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MakeBasic/schuhmanufaktur-formschoen/issues"
+  },
+  "homepage": "https://github.com/MakeBasic/schuhmanufaktur-formschoen#readme",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^6.0.0"
+  }
+}
