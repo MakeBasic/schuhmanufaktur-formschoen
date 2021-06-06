@@ -1,6 +1,8 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-    heroResize();
+    if($('.hero-section-inner').length > 0) {
+        heroResize();
+    }
 });
 
 $(".topbar-burger-container").click(function() {
@@ -13,8 +15,7 @@ $(".main-menu a").click(function() {
 })
 
 $( window ).resize(function() {
-    if($('.hero-section-inner') !== null) {
-      console.log( "ready!!!!" );
+    if($('.hero-section-inner h3').length > 0) {
         heroResize();
     }
 });

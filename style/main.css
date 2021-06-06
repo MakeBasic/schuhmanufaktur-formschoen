@@ -206,7 +206,8 @@ h3 {
   background-color: #1D1D1D;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   .page-header-grey .page-header-inner {
     text-align: center;
     color: #fff;
@@ -217,7 +218,8 @@ h3 {
       border: 1px solid #fff;
       display: inline-block;
       padding: 8px 15px 10px 15px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      position: relative; }
       @media only screen and (min-width: 576px) {
         .page-header-grey .page-header-inner h1 {
           font-size: 34px; } }
@@ -226,7 +228,10 @@ h3 {
           font-size: 40px; } }
     .page-header-grey .page-header-inner h2 {
       text-align: center;
-      font-size: 29px; }
+      font-size: 29px;
+      margin-top: 14px;
+      line-height: 62px;
+      position: relative; }
       @media only screen and (min-width: 576px) {
         .page-header-grey .page-header-inner h2 {
           font-size: 34px; } }
@@ -235,8 +240,24 @@ h3 {
           font-size: 40px; } }
     .page-header-grey .page-header-inner .page-header-lorbeergranz {
       background-image: url(./../images/lorbeergranz.png);
-      width: 70vw;
-      height: auto; }
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 90vw;
+      height: 90vh;
+      top: -214px;
+      right: -40%;
+      transform: translateX(-50%); }
+      @media only screen and (min-width: 576px) {
+        .page-header-grey .page-header-inner .page-header-lorbeergranz {
+          width: 70vw;
+          height: 70vh;
+          top: -100px;
+          right: -19%; } }
+      @media only screen and (min-width: 768px) {
+        .page-header-grey .page-header-inner .page-header-lorbeergranz {
+          top: 0; } }
 
 .page-footer .page-footer-inner {
   position: relative; }

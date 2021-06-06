@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     .page-header-inner {
         text-align: center;
@@ -17,16 +18,38 @@
             display: inline-block;
             padding: 8px 15px 10px 15px;
             margin-bottom: 0;
+            position: relative;
         }
 
         h2 {
             @include headline-h2;
+            margin-top: 14px;
+            line-height: 62px;
+            position: relative;
         }
 
         .page-header-lorbeergranz {
             background-image: url(./../images/lorbeergranz.png);
-            width: 70vw;
-            height: auto;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 90vw;
+            height: 90vh;
+            top: -214px;
+            right: -40%;
+            transform: translateX(-50%);
+
+            @include bp(small2) {
+                width: 70vw;
+                height: 70vh;
+                top: -100px;
+                right: -19%;
+            }
+
+            @include bp(medium1) {
+                top: 0;
+            }
         }
     }
 }
