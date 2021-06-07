@@ -1,0 +1,81 @@
+.page-leistungen {
+    position: relative;
+    width: 100vw;
+    background-color: $background-lightgrey;
+
+    .page-leistungen-inner {
+        @include padding-normal;
+        max-width: 1200px;
+        margin: auto;
+
+        &:after {
+            @include page-header-inner-line;
+        }
+
+        .leistungen-item-container {
+            margin-bottom: 50px;
+
+            @include bp(small2) {
+                margin-bottom: 75px;
+            }
+
+            @include bp(medium1) {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 100px;
+            }
+        }
+
+        .leistungen-item-container-reverse {
+            .leistungen-col:first-child {
+                order: 2;
+            }
+        }
+
+        .leistungen-col {
+            display: block;
+            padding: 30px;
+
+            @include bp(small2) {
+                max-width: 500px;
+            }
+        }
+        
+        .leistungen-item {
+            
+            h3 {
+                @include headline-h2;
+                text-align: left;
+            }
+
+            p {
+                @include text-normal;
+            }
+
+            img.image-width {
+                max-width: 100%;
+                margin-top: 50px;
+
+                @include bp(small2) {
+                    margin-top: 75px;
+                }
+
+                @include bp(medium1) {
+                    margin-top: 100px;
+                    width: 40vw;
+                    max-width: 620px;
+                }
+            }
+
+            img.image-height {
+                max-width: 100%;
+
+                @include bp(medium1) {
+                    width: 40vw;
+                    max-width: 484px;
+                }
+            }
+        }
+
+    }
+}

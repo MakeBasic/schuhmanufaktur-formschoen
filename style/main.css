@@ -363,7 +363,8 @@ h2.page-subheadline {
 
 .page-chronologie {
   position: relative;
-  width: 100vw; }
+  width: 100vw;
+  background-color: #FAFAFA; }
   .page-chronologie .page-chronologie-inner {
     /* With line on top inner-element*/
     padding: 90px 5px;
@@ -427,8 +428,12 @@ h2.page-subheadline {
         height: 200px; }
     .page-chronologie .page-chronologie-inner .meilenstein-party {
       position: relative;
-      margin-top: 130px;
-      padding-top: 80px; }
+      margin-top: 100px;
+      padding-top: 60px; }
+      @media only screen and (min-width: 576px) {
+        .page-chronologie .page-chronologie-inner .meilenstein-party {
+          margin-top: 130px;
+          padding-top: 80px; } }
       @media only screen and (min-width: 480px) {
         .page-chronologie .page-chronologie-inner .meilenstein-party:before {
           display: block;
@@ -461,6 +466,89 @@ h2.page-subheadline {
         @media only screen and (min-width: 768px) {
           .page-chronologie .page-chronologie-inner .meilenstein-party p span {
             font-size: 29px; } }
+
+.page-leistungen {
+  position: relative;
+  width: 100vw;
+  background-color: #FAFAFA; }
+  .page-leistungen .page-leistungen-inner {
+    /* With line on top inner-element*/
+    padding: 90px 5px;
+    padding-top: 120px;
+    max-width: 1200px;
+    margin: auto; }
+    @media only screen and (min-width: 576px) {
+      .page-leistungen .page-leistungen-inner {
+        padding: 90px 20px; } }
+    @media only screen and (min-width: 768px) {
+      .page-leistungen .page-leistungen-inner {
+        padding: 140px 50px;
+        padding-top: 170px; } }
+    .page-leistungen .page-leistungen-inner:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 50px;
+      top: 0;
+      left: 50%;
+      background-color: #000; }
+      @media only screen and (min-width: 768px) {
+        .page-leistungen .page-leistungen-inner:after {
+          height: 65px; } }
+    .page-leistungen .page-leistungen-inner .leistungen-item-container {
+      margin-bottom: 50px; }
+      @media only screen and (min-width: 576px) {
+        .page-leistungen .page-leistungen-inner .leistungen-item-container {
+          margin-bottom: 75px; } }
+      @media only screen and (min-width: 768px) {
+        .page-leistungen .page-leistungen-inner .leistungen-item-container {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 100px; } }
+    .page-leistungen .page-leistungen-inner .leistungen-item-container-reverse .leistungen-col:first-child {
+      order: 2; }
+    .page-leistungen .page-leistungen-inner .leistungen-col {
+      display: block;
+      padding: 30px; }
+      @media only screen and (min-width: 576px) {
+        .page-leistungen .page-leistungen-inner .leistungen-col {
+          max-width: 500px; } }
+    .page-leistungen .page-leistungen-inner .leistungen-item h3 {
+      text-align: center;
+      font-size: 29px;
+      text-align: left; }
+      @media only screen and (min-width: 576px) {
+        .page-leistungen .page-leistungen-inner .leistungen-item h3 {
+          font-size: 34px; } }
+      @media only screen and (min-width: 768px) {
+        .page-leistungen .page-leistungen-inner .leistungen-item h3 {
+          font-size: 40px; } }
+    .page-leistungen .page-leistungen-inner .leistungen-item p {
+      font-size: 15px; }
+      @media only screen and (min-width: 576px) {
+        .page-leistungen .page-leistungen-inner .leistungen-item p {
+          font-size: 18px; } }
+      @media only screen and (min-width: 768px) {
+        .page-leistungen .page-leistungen-inner .leistungen-item p {
+          font-size: 20px; } }
+    .page-leistungen .page-leistungen-inner .leistungen-item img.image-width {
+      max-width: 100%;
+      margin-top: 50px; }
+      @media only screen and (min-width: 576px) {
+        .page-leistungen .page-leistungen-inner .leistungen-item img.image-width {
+          margin-top: 75px; } }
+      @media only screen and (min-width: 768px) {
+        .page-leistungen .page-leistungen-inner .leistungen-item img.image-width {
+          margin-top: 100px;
+          width: 40vw;
+          max-width: 620px; } }
+    .page-leistungen .page-leistungen-inner .leistungen-item img.image-height {
+      max-width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .page-leistungen .page-leistungen-inner .leistungen-item img.image-height {
+          width: 40vw;
+          max-width: 484px; } }
 
 .page-impressum {
   background-color: #FAFAFA;
