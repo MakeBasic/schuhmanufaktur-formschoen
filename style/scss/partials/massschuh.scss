@@ -1,0 +1,98 @@
+.page-massschuhe {
+    position: relative;
+    width: 100vw;
+    background-color: $background-lightgrey;
+
+    .page-massschuhe-inner {
+        @include padding-normal;
+        max-width: 1200px;
+        margin: auto;
+
+        &:after {
+            @include page-header-inner-line;
+        }
+
+        .massschuhe-item-container {
+            height: 250px;
+            width: calc(100% - 60px);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.4s;
+
+            @include bp(small2) {
+                height: 300px;
+            }
+
+            @include bp(medium1) {
+                height: 400px;
+                margin-bottom: 40px;
+            }
+
+            &:hover {
+                opacity: 0.4;
+            }
+
+            .massschuhe-item-inner {
+                display: block;
+                color: $white;
+                text-align: center;
+
+                span {
+                    font-size: 40px;
+                    background-color: $black;
+                    border-radius: 50px;
+                    padding: 0 28px;
+                    padding-bottom: 18px;
+
+                    @include bp(small2) {
+                        font-size: 60px;
+                    }
+                }
+
+                h3 {
+                    @include text-big;
+                    padding: 4px 12px 6px 12px;
+                    background-color: $black;
+                }
+            }
+        }
+
+        .massschuhe-item-1 {
+            background-image: url(./../images/m_schuh_1.png);
+        }
+
+        .massschuhe-item-2 {
+            background-image: url(./../images/m_schuh_2.png);
+        }
+
+        .massschuhe-item-3 {
+            background-image: url(./../images/m_schuh_3.png);
+        }
+
+        .massschuhe-item-4 {
+            background-image: url(./../images/m_schuh_4.png);
+        }
+
+        .massschuhe-item-5 {
+            background-image: url(./../images/m_schuh_5.png);
+        }
+
+        .massschuhe-item-6 {
+            background-image: url(./../images/m_schuh_6.png);
+        }
+
+        .massschuhe-item-7 {
+            background-image: url(./../images/m_schuh_7.png);
+        }
+
+        .massschuhe-item-8 {
+            background-image: url(./../images/m_schuh_8.png);
+        }
+
+    }
+}
