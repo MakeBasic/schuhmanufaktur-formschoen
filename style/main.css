@@ -208,6 +208,17 @@ h3 {
   justify-content: center;
   align-items: center;
   overflow: hidden; }
+  .page-header-grey:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    bottom: 0;
+    background-color: #fff; }
+    @media only screen and (min-width: 768px) {
+      .page-header-grey:after {
+        height: 65px; } }
   .page-header-grey .page-header-inner {
     text-align: center;
     color: #fff;
@@ -258,6 +269,25 @@ h3 {
       @media only screen and (min-width: 768px) {
         .page-header-grey .page-header-inner .page-header-lorbeergranz {
           top: 0; } }
+
+/* Under every header page */
+h2.page-subheadline {
+  text-align: center;
+  font-size: 29px;
+  color: #909090;
+  margin-bottom: 80px; }
+  @media only screen and (min-width: 576px) {
+    h2.page-subheadline {
+      font-size: 34px; } }
+  @media only screen and (min-width: 768px) {
+    h2.page-subheadline {
+      font-size: 40px; } }
+  @media only screen and (min-width: 576px) {
+    h2.page-subheadline {
+      margin-bottom: 100px; } }
+  @media only screen and (min-width: 768px) {
+    h2.page-subheadline {
+      margin-bottom: 120px; } }
 
 .page-footer .page-footer-inner {
   position: relative; }
@@ -330,6 +360,107 @@ h3 {
     @media only screen and (min-width: 576px) {
       .page-footer .page-footer-inner .footer-bar {
         flex-direction: row; } }
+
+.page-chronologie {
+  position: relative;
+  width: 100vw; }
+  .page-chronologie .page-chronologie-inner {
+    /* With line on top inner-element*/
+    padding: 90px 5px;
+    padding-top: 120px;
+    max-width: 700px;
+    margin: auto; }
+    @media only screen and (min-width: 576px) {
+      .page-chronologie .page-chronologie-inner {
+        padding: 90px 20px; } }
+    @media only screen and (min-width: 768px) {
+      .page-chronologie .page-chronologie-inner {
+        padding: 140px 50px;
+        padding-top: 170px; } }
+    .page-chronologie .page-chronologie-inner:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 50px;
+      top: 0;
+      left: 50%;
+      background-color: #000; }
+      @media only screen and (min-width: 768px) {
+        .page-chronologie .page-chronologie-inner:after {
+          height: 65px; } }
+    .page-chronologie .page-chronologie-inner p,
+    .page-chronologie .page-chronologie-inner h4 {
+      font-size: 15px;
+      text-align: center; }
+      @media only screen and (min-width: 576px) {
+        .page-chronologie .page-chronologie-inner p,
+        .page-chronologie .page-chronologie-inner h4 {
+          font-size: 18px; } }
+      @media only screen and (min-width: 768px) {
+        .page-chronologie .page-chronologie-inner p,
+        .page-chronologie .page-chronologie-inner h4 {
+          font-size: 20px; } }
+    .page-chronologie .page-chronologie-inner h4 {
+      margin-bottom: 10px;
+      margin-top: 35px; }
+      @media only screen and (min-width: 576px) {
+        .page-chronologie .page-chronologie-inner h4 {
+          margin-top: 40px; } }
+      @media only screen and (min-width: 768px) {
+        .page-chronologie .page-chronologie-inner h4 {
+          margin-top: 55px; } }
+    .page-chronologie .page-chronologie-inner p {
+      margin-bottom: 25px; }
+      @media only screen and (min-width: 576px) {
+        .page-chronologie .page-chronologie-inner p {
+          margin-bottom: 30px; } }
+      @media only screen and (min-width: 768px) {
+        .page-chronologie .page-chronologie-inner p {
+          margin-bottom: 35px; } }
+    .page-chronologie .page-chronologie-inner .meilenstein-image-container {
+      display: flex;
+      justify-content: center; }
+      .page-chronologie .page-chronologie-inner .meilenstein-image-container img {
+        display: block;
+        width: 200px;
+        height: 200px; }
+    .page-chronologie .page-chronologie-inner .meilenstein-party {
+      position: relative;
+      margin-top: 130px;
+      padding-top: 80px; }
+      @media only screen and (min-width: 480px) {
+        .page-chronologie .page-chronologie-inner .meilenstein-party:before {
+          display: block;
+          content: "";
+          position: absolute;
+          top: -55px;
+          right: 50%;
+          transform: translateX(-50%);
+          width: 1px;
+          height: 100px;
+          background-color: #909090; } }
+      @media only screen and (min-width: 768px) {
+        .page-chronologie .page-chronologie-inner .meilenstein-party:before {
+          top: -75px;
+          height: 150px; } }
+      .page-chronologie .page-chronologie-inner .meilenstein-party h2 {
+        text-align: center;
+        font-size: 29px; }
+        @media only screen and (min-width: 576px) {
+          .page-chronologie .page-chronologie-inner .meilenstein-party h2 {
+            font-size: 34px; } }
+        @media only screen and (min-width: 768px) {
+          .page-chronologie .page-chronologie-inner .meilenstein-party h2 {
+            font-size: 40px; } }
+      .page-chronologie .page-chronologie-inner .meilenstein-party p span {
+        font-size: 15px; }
+        @media only screen and (min-width: 576px) {
+          .page-chronologie .page-chronologie-inner .meilenstein-party p span {
+            font-size: 24px; } }
+        @media only screen and (min-width: 768px) {
+          .page-chronologie .page-chronologie-inner .meilenstein-party p span {
+            font-size: 29px; } }
 
 .page-impressum {
   background-color: #FAFAFA;

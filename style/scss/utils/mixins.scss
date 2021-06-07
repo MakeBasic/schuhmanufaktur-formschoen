@@ -27,6 +27,21 @@
     }
 }
 
+@mixin page-header-inner-line {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    background-color: $black;
+
+    @include bp(medium1) {
+        height: 65px;
+    }
+}
+
 @mixin section-inner-before-line {
     @include bp(small1) {
         display: block;

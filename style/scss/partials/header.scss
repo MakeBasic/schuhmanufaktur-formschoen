@@ -7,6 +7,20 @@
     align-items: center;
     overflow: hidden;
 
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 50px;
+        bottom: 0;
+        background-color: $white;
+
+        @include bp(medium1) {
+            height: 65px;
+        }
+    }
+
     .page-header-inner {
         text-align: center;
         color: $white;
@@ -51,5 +65,20 @@
                 top: 0;
             }
         }
+    }
+}
+
+/* Under every header page */
+h2.page-subheadline {
+    @include headline-h2;
+    color: $subheadline-grey;
+    margin-bottom: 80px;
+
+    @include bp(small2) {
+        margin-bottom: 100px;
+    }
+
+    @include bp(medium1) {
+        margin-bottom: 120px;
     }
 }
