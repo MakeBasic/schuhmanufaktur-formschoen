@@ -22,7 +22,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: opacity 0.4s;
+            transition: transform 0.4s;
 
             @include bp(small2) {
                 height: 300px;
@@ -34,7 +34,7 @@
             }
 
             &:hover {
-                opacity: 0.4;
+                transform: scale(1.02);
             }
 
             .massschuhe-item-inner {

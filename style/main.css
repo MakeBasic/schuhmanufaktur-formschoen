@@ -589,7 +589,7 @@ h2.page-subheadline {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: opacity 0.4s; }
+      transition: transform 0.4s; }
       @media only screen and (min-width: 576px) {
         .page-massschuhe .page-massschuhe-inner .massschuhe-item-container {
           height: 300px; } }
@@ -598,7 +598,7 @@ h2.page-subheadline {
           height: 400px;
           margin-bottom: 40px; } }
       .page-massschuhe .page-massschuhe-inner .massschuhe-item-container:hover {
-        opacity: 0.4; }
+        transform: scale(1.02); }
       .page-massschuhe .page-massschuhe-inner .massschuhe-item-container .massschuhe-item-inner {
         display: block;
         color: #fff;
@@ -638,6 +638,58 @@ h2.page-subheadline {
       background-image: url(./../images/m_schuh_7.png); }
     .page-massschuhe .page-massschuhe-inner .massschuhe-item-8 {
       background-image: url(./../images/m_schuh_8.png); }
+
+.page-pflegetipps {
+  position: relative;
+  width: 100vw;
+  background-color: #FAFAFA; }
+  .page-pflegetipps .page-pflegetipps-inner {
+    /* With line on top inner-element*/
+    padding: 90px 5px;
+    padding-top: 120px;
+    max-width: 1200px;
+    margin: auto; }
+    @media only screen and (min-width: 576px) {
+      .page-pflegetipps .page-pflegetipps-inner {
+        padding: 90px 20px; } }
+    @media only screen and (min-width: 768px) {
+      .page-pflegetipps .page-pflegetipps-inner {
+        padding: 140px 50px;
+        padding-top: 170px; } }
+    .page-pflegetipps .page-pflegetipps-inner:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 50px;
+      top: 0;
+      left: 50%;
+      background-color: #000; }
+      @media only screen and (min-width: 768px) {
+        .page-pflegetipps .page-pflegetipps-inner:after {
+          height: 65px; } }
+    .page-pflegetipps .page-pflegetipps-inner .pflegetipps-list {
+      text-align: center; }
+      .page-pflegetipps .page-pflegetipps-inner .pflegetipps-list li {
+        list-style: inherit;
+        padding: 30px; }
+    .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images {
+      display: block; }
+      @media only screen and (min-width: 576px) {
+        .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images {
+          display: flex; } }
+      .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images .pflegetipps-image-element {
+        width: 100vw;
+        height: 250px;
+        background-size: cover; }
+        @media only screen and (min-width: 576px) {
+          .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images .pflegetipps-image-element {
+            width: 50vw;
+            height: 400px; } }
+      .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images .pflegetipps-image-1 {
+        background-image: url(./../images/menu_pflegetipps.png); }
+      .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images .pflegetipps-image-2 {
+        background-image: url(./../images/m_schuh_6.png); }
 
 .page-impressum {
   background-color: #FAFAFA;

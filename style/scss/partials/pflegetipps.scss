@@ -1,0 +1,52 @@
+.page-pflegetipps {
+    position: relative;
+    width: 100vw;
+    background-color: $background-lightgrey;
+
+    .page-pflegetipps-inner {
+        @include padding-normal;
+        max-width: 1200px;
+        margin: auto;
+
+        &:after {
+            @include page-header-inner-line;
+        }
+
+        .pflegetipps-list {
+            text-align: center;
+
+            li {
+                list-style: inherit;
+                padding: 30px;
+            }
+        }
+
+        .pflegetipps-images {
+            display: block;
+
+            @include bp(small2) {
+                display: flex;
+            }
+
+            .pflegetipps-image-element {
+                width: 100vw;
+                height: 250px;
+                background-size: cover;
+
+                @include bp(small2) {
+                    width: 50vw;
+                    height: 400px;
+                }
+
+            }
+
+            .pflegetipps-image-1 {
+                background-image: url(./../images/menu_pflegetipps.png);
+            }
+
+            .pflegetipps-image-2 {
+                background-image: url(./../images/m_schuh_6.png);
+            }
+        }
+    }
+}
