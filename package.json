@@ -1,6 +1,6 @@
 {
-  "name": "1b-umsetzung",
-  "version": "1.0.0",
+  "name": "schuhmanufaktur-formschoen",
+  "version": "1.0.1",
   "description": "MD.H Abschlussprojekt Website",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.1.0",
-    "node-sass": "^6.0.0"
+    "node-sass": "^6.0.0",
+    "trim-newlines": ">=3.0.1"
   }
 }
