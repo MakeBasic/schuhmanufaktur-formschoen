@@ -6,41 +6,52 @@ $( document ).ready(function() {
     }
 });
 
+/* Menu Click Events */
 $(".topbar-burger-container").click(function() {
-    closeMenu(this);
+    toggleMenu(this);
 });
-
-
 $(".main-menu a").click(function() {
-    closeMenu($(".topbar-burger-container"));
+    toggleMenu($(".topbar-burger-container"));
 })
 
+/* Hero-Section - Window-Resize Listener */
 $( window ).resize(function() {
     if($('.hero-section-inner h3').length > 0) {
         heroResize();
     }
 });
 
-$('.jubilaeum-section-slider').slick({
-    autoplay:true,
-    speed: 500,
-    autoplaySpeed:4000,
-    arrows:true,
-    prevArrow: $('.prev-slide'),
-    nextArrow: $('.next-slide')
-});
+/* Jubilaeum-Slick-Slider */
+if ($('.jubilaeum-section-slider').length > 0) {
+    $('.jubilaeum-section-slider').slick({
+        autoplay:true,
+        speed: 500,
+        autoplaySpeed:4000,
+        arrows:true,
+        prevArrow: $('.prev-slide'),
+        nextArrow: $('.next-slide')
+    });
+}
 
-$('.vote-slider').slick({
-  autoplay:true,
-  speed: 500,
-  autoplaySpeed:4000,
-  arrows:true,
-  prevArrow: $('.prev-vote-slide'),
-  nextArrow: $('.next-vote-slide')
-});
+/* Vote-Slick-Slider */
+if ($('.vote-slider').length > 0) {
+    $('.vote-slider').slick({
+        autoplay:true,
+        speed: 500,
+        autoplaySpeed:4000,
+        arrows:true,
+        prevArrow: $('.prev-vote-slide'),
+        nextArrow: $('.next-vote-slide')
+      });
+}
 
+/* Parallax Lax Animation */
+if ($('.page-leistungen-section').length > 0) {
+    lax.init();
+}
 
-function closeMenu(clickedElement) {
+/* Menu Open-Close Function */
+function toggleMenu(clickedElement) {
     $(clickedElement).toggleClass('cross');
     $('html').toggleClass('noscroll');
     $('.main-menu-container').toggleClass('main-menu-opened');
@@ -52,6 +63,7 @@ function closeMenu(clickedElement) {
     }
 }
 
+/* Hero-Section Function for Position and Height of the Lines */
 function heroResize() {
   var topH3 = $('.hero-section-inner h3').offset().top;
   var topLogo = $('.hero-section-inner .logo-icon').offset().top;
@@ -63,7 +75,6 @@ function heroResize() {
   $('.hero-third-line').css('top', topLogo + 130);
   $('.hero-third-line').css('height', topH2 - topLogo - 130);
 
-//   $('.hero-fourd-line').css('top', topH2 + (topH2 - $('.hero-section-inner h2').height()) - 630);
   $('.hero-fourd-line').css('height', topLogo - topH3 - 80);
 }
 

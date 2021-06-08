@@ -43,17 +43,15 @@
 }
 
 @mixin section-inner-before-line {
-    @include bp(small1) {
-        display: block;
-        content: "";
-        position: absolute;
-        top: -55px;
-        right: 50%;
-        transform: translateX(-50%);
-        width: 1px;
-        height: 100px;
-        background-color: $space-line;
-    }
+    display: block;
+    content: "";
+    position: absolute;
+    top: -55px;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100px;
+    background-color: $space-line;
 
     @include bp(medium1) {
         top: -75px;

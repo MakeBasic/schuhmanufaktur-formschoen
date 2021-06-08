@@ -3,7 +3,9 @@
         position: relative;
 
         &:before {
-            @include section-inner-before-line;
+            @include bp(small1) {
+                @include section-inner-before-line;
+            }
         }
 
         .contact {
@@ -32,20 +34,33 @@
                 color: $contact-url;
             }
         }
+
         .footer-bar {
             position: relative;
             background-color: $background-lightgrey;
             width: 100vw;
             padding: 50px 0;
             display: flex;
+            align-items: center;
             flex-direction: column;
+
+            @include bp(small2) {
+                display: block;
+            }
 
             .footer-logo {
                 display: block;
-                position: absolute;
-                width: 50px;
-                height: 50px;
-                left: 50px;
+                width: 40px;
+                height: 40px;
+                left: 35px;
+                margin-bottom: 20px;
+
+                @include bp(small2) {
+                    position: absolute;
+                    margin-bottom: 0;
+                    width: 35px;
+                    height: 35px;
+                }
             }
 
             .socialmedia-icons {
@@ -57,6 +72,7 @@
 
                 img {
                     padding: 8px;
+                    height: 30px;
                 }
             }
 

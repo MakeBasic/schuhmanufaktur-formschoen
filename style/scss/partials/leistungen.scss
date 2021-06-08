@@ -5,7 +5,7 @@
 
     .page-leistungen-inner {
         @include padding-normal;
-        max-width: 1200px;
+        max-width: $max-width-content;
         margin: auto;
 
         &:after {

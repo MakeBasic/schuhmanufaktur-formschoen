@@ -5,7 +5,7 @@
 
     .page-pflegetipps-inner {
         @include padding-normal;
-        max-width: 1200px;
+        max-width: $max-width-content;
         margin: auto;
 
         &:after {
@@ -45,7 +45,7 @@
             }
 
             .pflegetipps-image-2 {
-                background-image: url(./../images/m_schuh_6.png);
+                background-image: url(./../images/m_schuh_6.jpg);
             }
         }
     }

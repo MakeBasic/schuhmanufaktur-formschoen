@@ -54,9 +54,13 @@
             position: absolute;
             width: 90vw;
             height: 90vh;
-            top: -214px;
+            top: -160px;
             right: -40%;
             transform: translateX(-50%);
+
+            @include bp(small1) {
+                top: -214px;
+            }
 
             @include bp(small2) {
                 width: 70vw;

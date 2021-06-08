@@ -261,12 +261,12 @@ h3 {
     padding: 10px;
   }
 }
-.page-header .main-menu-container.main-menu-opened li:hover a {
-  color: #D7D7D7;
-}
 .page-header .main-menu-container.main-menu-opened li a {
   text-decoration: none;
-  color: #fff !important;
+  color: #fff;
+}
+.page-header .main-menu-container.main-menu-opened li a:hover {
+  color: #909090;
 }
 .page-header .main-menu-container .main-menu {
   height: 100vh;
@@ -350,9 +350,14 @@ h3 {
   position: absolute;
   width: 90vw;
   height: 90vh;
-  top: -214px;
+  top: -160px;
   right: -40%;
   transform: translateX(-50%);
+}
+@media only screen and (min-width: 480px) {
+  .page-header-grey .page-header-inner .page-header-lorbeergranz {
+    top: -214px;
+  }
 }
 @media only screen and (min-width: 576px) {
   .page-header-grey .page-header-inner .page-header-lorbeergranz {
@@ -412,7 +417,7 @@ h2.page-subheadline {
     background-color: #909090;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) and (min-width: 768px) {
   .page-footer .page-footer-inner:before {
     top: -75px;
     height: 150px;
@@ -470,14 +475,28 @@ h2.page-subheadline {
   width: 100vw;
   padding: 50px 0;
   display: flex;
+  align-items: center;
   flex-direction: column;
+}
+@media only screen and (min-width: 576px) {
+  .page-footer .page-footer-inner .footer-bar {
+    display: block;
+  }
 }
 .page-footer .page-footer-inner .footer-bar .footer-logo {
   display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 50px;
+  width: 40px;
+  height: 40px;
+  left: 35px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .page-footer .page-footer-inner .footer-bar .footer-logo {
+    position: absolute;
+    margin-bottom: 0;
+    width: 35px;
+    height: 35px;
+  }
 }
 .page-footer .page-footer-inner .footer-bar .socialmedia-icons {
   display: block;
@@ -488,6 +507,7 @@ h2.page-subheadline {
 }
 .page-footer .page-footer-inner .footer-bar .socialmedia-icons img {
   padding: 8px;
+  height: 30px;
 }
 @media only screen and (min-width: 576px) {
   .page-footer .page-footer-inner .footer-bar {
@@ -506,6 +526,8 @@ h2.page-subheadline {
   padding-top: 120px;
   max-width: 700px;
   margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 @media only screen and (min-width: 576px) {
   .page-chronologie .page-chronologie-inner {
@@ -589,31 +611,39 @@ h2.page-subheadline {
 .page-chronologie .page-chronologie-inner .meilenstein-party {
   position: relative;
   margin-top: 100px;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 @media only screen and (min-width: 576px) {
   .page-chronologie .page-chronologie-inner .meilenstein-party {
-    margin-top: 130px;
-    padding-top: 80px;
+    margin-top: 100px;
+    padding-top: 30px;
   }
 }
-@media only screen and (min-width: 480px) {
-  .page-chronologie .page-chronologie-inner .meilenstein-party:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -55px;
-    right: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 100px;
-    background-color: #909090;
+@media only screen and (min-width: 768px) {
+  .page-chronologie .page-chronologie-inner .meilenstein-party {
+    margin-top: 130px;
   }
+}
+.page-chronologie .page-chronologie-inner .meilenstein-party:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -55px;
+  right: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100px;
+  background-color: #909090;
 }
 @media only screen and (min-width: 768px) {
   .page-chronologie .page-chronologie-inner .meilenstein-party:before {
     top: -75px;
     height: 150px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .page-chronologie .page-chronologie-inner .meilenstein-party:before {
+    height: 80px;
   }
 }
 .page-chronologie .page-chronologie-inner .meilenstein-party h2 {
@@ -833,15 +863,17 @@ h2.page-subheadline {
   text-align: center;
 }
 .page-massschuhe .page-massschuhe-inner .massschuhe-item-container .massschuhe-item-inner span {
+  display: inline-block;
   font-size: 40px;
   background-color: #000;
   border-radius: 50px;
-  padding: 0 28px;
+  padding: 0px 27px 10px;
   padding-bottom: 18px;
 }
 @media only screen and (min-width: 576px) {
   .page-massschuhe .page-massschuhe-inner .massschuhe-item-container .massschuhe-item-inner span {
     font-size: 60px;
+    padding: 0px 36px 15px;
   }
 }
 .page-massschuhe .page-massschuhe-inner .massschuhe-item-container .massschuhe-item-inner h3 {
@@ -866,7 +898,7 @@ h2.page-subheadline {
   background-image: url(./../images/m_schuh_2.png);
 }
 .page-massschuhe .page-massschuhe-inner .massschuhe-item-3 {
-  background-image: url(./../images/m_schuh_3.png);
+  background-image: url(./../images/m_schuh_3.jpg);
 }
 .page-massschuhe .page-massschuhe-inner .massschuhe-item-4 {
   background-image: url(./../images/m_schuh_4.png);
@@ -875,7 +907,7 @@ h2.page-subheadline {
   background-image: url(./../images/m_schuh_5.png);
 }
 .page-massschuhe .page-massschuhe-inner .massschuhe-item-6 {
-  background-image: url(./../images/m_schuh_6.png);
+  background-image: url(./../images/m_schuh_6.jpg);
 }
 .page-massschuhe .page-massschuhe-inner .massschuhe-item-7 {
   background-image: url(./../images/m_schuh_7.png);
@@ -952,11 +984,12 @@ h2.page-subheadline {
   background-image: url(./../images/menu_pflegetipps.png);
 }
 .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images .pflegetipps-image-2 {
-  background-image: url(./../images/m_schuh_6.png);
+  background-image: url(./../images/m_schuh_6.jpg);
 }
 
 .page-impressum {
   background-color: #FAFAFA;
+  position: relative;
   /* With line on top inner-element*/
   padding: 90px 5px;
   padding-top: 120px;
@@ -970,6 +1003,21 @@ h2.page-subheadline {
   .page-impressum {
     padding: 140px 50px;
     padding-top: 170px;
+  }
+}
+.page-impressum:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  top: 0;
+  left: 50%;
+  background-color: #000;
+}
+@media only screen and (min-width: 768px) {
+  .page-impressum:after {
+    height: 65px;
   }
 }
 .page-impressum p {
@@ -1575,6 +1623,12 @@ h2.page-subheadline {
     border-top: 1px solid #909090;
     border-left: 1px solid #909090;
     transform: rotate(-54deg) skew(-20deg);
+    left: 0px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .vote-section .vote-slider-container .prev-vote-slide {
+    left: 12px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1583,17 +1637,33 @@ h2.page-subheadline {
     border-top: 1px solid #909090;
     border-right: 1px solid #909090;
     transform: rotate(54deg) skew(20deg);
+    right: 0px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .vote-section .vote-slider-container .next-vote-slide {
+    right: 12px;
   }
 }
 .vote-section .vote-slider-container .vote-slider {
   text-align: center;
   max-width: 700px;
-  padding: 50px;
+  padding: 5px;
   margin: auto;
+}
+@media only screen and (min-width: 576px) {
+  .vote-section .vote-slider-container .vote-slider {
+    padding: 50px;
+  }
 }
 .vote-section .vote-slider-container .vote-slider .vote-slide {
   display: block;
-  padding: 50px;
+  padding: 50px 35px;
+}
+@media only screen and (min-width: 576px) {
+  .vote-section .vote-slider-container .vote-slider .vote-slide {
+    padding: 50px;
+  }
 }
 .vote-section .vote-slider-container .vote-slider p {
   position: relative;
@@ -1622,11 +1692,21 @@ h2.page-subheadline {
 }
 .vote-section .vote-slider-container .vote-slider p:before {
   top: -80px;
-  left: -60px;
+  left: -45px;
+}
+@media only screen and (min-width: 576px) {
+  .vote-section .vote-slider-container .vote-slider p:before {
+    left: -60px;
+  }
 }
 .vote-section .vote-slider-container .vote-slider p:after {
   bottom: -50px;
-  right: -60px;
+  right: -45px;
+}
+@media only screen and (min-width: 576px) {
+  .vote-section .vote-slider-container .vote-slider p:after {
+    right: -60px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

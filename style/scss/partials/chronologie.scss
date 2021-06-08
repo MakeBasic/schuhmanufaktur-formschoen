@@ -5,8 +5,10 @@
 
     .page-chronologie-inner {
         @include padding-normal;
-        max-width: 700px;
+        max-width: $max-width-content-small;
         margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
 
         &:after {
             @include page-header-inner-line;
@@ -57,15 +59,23 @@
         .meilenstein-party {
             position: relative;
             margin-top: 100px;
-            padding-top: 60px;
+            padding-top: 40px;
 
             @include bp(small2) {
+                margin-top: 100px;
+                padding-top: 30px;
+            }
+
+            @include bp(medium1) {
                 margin-top: 130px;
-                padding-top: 80px;
             }
 
             &:before {
                 @include section-inner-before-line;
+
+                @include bp(small2) {
+                    height: 80px;
+                }
             }
 
             h2 {

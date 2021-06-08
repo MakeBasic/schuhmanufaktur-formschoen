@@ -1,6 +1,11 @@
 .page-impressum {
     background-color: $background-lightgrey;
+    position: relative;
     @include padding-normal;
+
+    &:after {
+        @include page-header-inner-line;
+    }
 
     p {
         text-align: center;
