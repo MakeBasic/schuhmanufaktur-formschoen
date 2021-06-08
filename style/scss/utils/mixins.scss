@@ -127,3 +127,48 @@
         padding-top: 170px;
     }
 }
+
+@mixin padding-wo-line {
+    /* With line on top inner-element*/
+    padding: 90px 5px;
+
+    @include bp(small2) {
+        padding: 90px 20px;
+    }
+
+    @include bp(medium1) {
+        padding: 140px 50px;
+    }
+}
+
+/* Thin Slider Arrows */
+@mixin slider-arrow-setup {
+    position: absolute;
+    top: calc(50% - 20px);
+    overflow: hidden;
+    display: inline-block;
+    font-size: 12px; /*set the size for arrow*/
+    width: 40px;
+    height: 40px;
+    margin-top: -2em;
+    top: 50%;
+    z-index: 100;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@mixin slider-arrow-prev {
+    left: 12px;
+    border-top: 1px solid $vote-arrows;
+    border-left: 1px solid $vote-arrows;
+    transform: rotate(-54deg) skew(-20deg);
+}
+
+@mixin slider-arrow-next {
+    right: 12px;
+    border-top: 1px solid $vote-arrows;
+    border-right: 1px solid $vote-arrows;
+    transform: rotate(54deg) skew(20deg);
+}

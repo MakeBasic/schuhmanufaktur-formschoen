@@ -29,7 +29,7 @@ $('.jubilaeum-section-slider').slick({
     nextArrow: $('.next-slide')
 });
 
-$('.vote-slider-container').slick({
+$('.vote-slider').slick({
   autoplay:true,
   speed: 500,
   autoplaySpeed:4000,
@@ -40,7 +40,6 @@ $('.vote-slider-container').slick({
 
 
 function closeMenu(el) {
-  console.log( "menu" );
     $(el).toggleClass('cross');
     $('html').toggleClass('noscroll');
     $('.main-menu-container').toggleClass('main-menu-opened');
