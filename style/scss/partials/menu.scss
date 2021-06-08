@@ -164,18 +164,16 @@
 
             ul {
                 padding: 0;
-                margin-bottom: 6vh;
             }
     
             li {
                 list-style: none;
                 text-align: center;
                 font-size: 20px;
-                padding: 6px;
+                padding: 10px;
 
                 @include bp(small2) {
                     font-size: 36px;
-                    padding: 10px;
                 }
                 
                 a {

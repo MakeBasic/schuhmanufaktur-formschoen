@@ -38,8 +38,12 @@
         h2 {
             @include headline-h2;
             margin-top: 14px;
-            line-height: 62px;
+            line-height: 46px;
             position: relative;
+
+            @include bp(small2) {
+                line-height: 62px;
+            }
         }
 
         i {

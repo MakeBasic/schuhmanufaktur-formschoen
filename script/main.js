@@ -4,6 +4,8 @@ $( document ).ready(function() {
     if($('.hero-section-inner').length > 0) {
         heroResize();
     }
+
+    AOS.init();
 });
 
 /* Menu Click Events */
@@ -46,9 +48,7 @@ if ($('.vote-slider').length > 0) {
 }
 
 /* Parallax Lax Animation */
-if ($('.page-leistungen-section').length > 0) {
-    lax.init();
-}
+
 
 /* Menu Open-Close Function */
 function toggleMenu(clickedElement) {
