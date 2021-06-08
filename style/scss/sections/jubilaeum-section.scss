@@ -130,7 +130,17 @@
 
                 @include bp(medium1) {
                     height: 100vh !important;
-                    width: auto !important;
+                    width: 40vw !important;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+
+                @include bp(medium3) {
+                    width: 50vw !important;
+                }
+    
+                @include bp(large2) {
+                    width: 60vw !important;
                 }
             }
         }
