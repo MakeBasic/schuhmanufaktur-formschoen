@@ -339,6 +339,9 @@ h3 {
     font-size: 40px;
   }
 }
+.page-header-grey .page-header-inner i {
+  color: #909090;
+}
 .page-header-grey .page-header-inner .page-header-lorbeergranz {
   background-image: url(./../images/lorbeergranz.png);
   background-size: contain;

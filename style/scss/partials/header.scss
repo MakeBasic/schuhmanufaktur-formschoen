@@ -42,6 +42,10 @@
             position: relative;
         }
 
+        i {
+            color: $header-italic-text;
+        }
+
         .page-header-lorbeergranz {
             background-image: url(./../images/lorbeergranz.png);
             background-size: contain;

@@ -9,15 +9,18 @@
         <meta name="copyright" content="Nikolas Leander Schmidt" />
         <meta name="robots" content="noindex,nofollow" />
         <link rel="stylesheet" type="text/css" href="./style/main.css" media="screen">
-        <!-- slick.css : Slider Framework - Quelle: 'https://kenwheeler.github.io/slick/' -->
-        <link rel="stylesheet" type="text/css" href="./dist/slick.css" media="screen">
-        <title>Schuhmanufaktur Formschön</title>
+        <link rel="stylesheet" type="text/css" href="./dist/slick.css" media="screen"><!-- Slider Framework - Quelle: 'https://kenwheeler.github.io/slick/' -->
+        <title>Schuhmanufaktur Formschön - Leistungen</title>
     </head>
     <body>
-
+        <!-- Header : contains the Menu -->
         <header class="page-header">
+
+            <!-- Menu-Bar : top, fixed on every page -->
             <div class="topbar">
                 <div class="topbar-burger-container">
+
+                    <!-- Burgermenu : visible on Mobile -->
                     <div class="topbar-burger">
                         <div class="burger">
                             <div class="bar bar-top"></div>
@@ -28,18 +31,25 @@
                             <div class="bar2 bar-btm"></div>
                         </div>
                     </div>
+                    
+                    <!-- Menutext-Button : visible on Tablet and Desctop -->
                     <div class="topbar-burger-typo">
                         Menü
                     </div>
                 </div>
             </div>
+
+            <!-- Menu-Overlay -->
             <div class="main-menu-container">
 
+                <!-- Sitelogo -->
                 <a href="index.html">
                     <div class="topbar-logo">
                         <img alt="Schuhmanufaktur Formschön Logo" src="./images/logo_white.png" />
                     </div>
                 </a>
+
+                <!-- Closed Burgermenu -->
                 <div class="topbar-burger">
                     <div class="burger">
                         <div class="bar bar-top"></div>
@@ -48,6 +58,7 @@
                     </div>
                 </div>
 
+                <!-- Navigation Items -->
                 <nav class="main-menu">
                     <ul>
                         <li>
@@ -75,13 +86,19 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Main : Main Site Content -->
         <main>
+
+            <!-- Header-Section -->
             <section class="page-header-grey">
                 <div class="page-header-inner">
                     <h1>Leistungen</h1>
                     <h2>Schuhmanufaktur Formschön<br><i>Wir lieben Leder</i></h2>
                 </div>
             </section>
+
+            <!-- Leistungen-Page-Section -->
             <section class="page-leistungen">
                 <div class="page-leistungen-inner">
                     <h2 class="page-subheadline">Das leisten wir für Sie</h2>
@@ -147,8 +164,12 @@
                 </div>
             </section>
         </main>
+
+        <!-- Footer : Site Footer with Contact and Socialmedia Section -->
         <footer id="contact" class="page-footer">
             <div class="page-footer-inner">
+
+                <!-- Footer : Contact -->
                 <div class="contact">
                     <h2>Öffnungszeiten und Kontakt</h2>
                     <p>
@@ -166,22 +187,24 @@
                         <span>www.schuhmanufaktur-formschön.de</span>
                     </p>
                 </div>
+
+                <!-- Footer : Socialmedia Bar -->
                 <div class="footer-bar">
                     <a href="index.html">
                         <img class="footer-logo" alt="Schuhmanufaktur Formschön Logo" data-src="./images/footer_logo.png">
                     </a>
                     <div class="socialmedia-icons">
                         <a target="_blank" href="https://www.instagram.com">
-                            <img alt="Instagram" data-src="./images/instagram.png">
+                            <img class="lazyload" alt="Instagram" data-src="./images/instagram.png">
                         </a>
                         <a target="_blank" href="https://www.youtube.com">
-                            <img alt="Instagram" data-src="./images/youtube.png">
+                            <img class="lazyload" alt="YouTube" data-src="./images/youtube.png">
                         </a>
                         <a target="_blank" href="https://www.snapchat.com">
-                            <img alt="Instagram" data-src="./images/snapchat.png">
+                            <img class="lazyload" alt="Snapchat" data-src="./images/snapchat.png">
                         </a>
                         <a target="_blank" href="https://www.facebook.com">
-                            <img alt="Instagram" data-src="./images/facebook.png">
+                            <img class="lazyload" alt="Facebook" data-src="./images/facebook.png">
                         </a>
                     </div>
                 </div>

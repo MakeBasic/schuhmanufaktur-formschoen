@@ -9,15 +9,18 @@
         <meta name="copyright" content="Nikolas Leander Schmidt" />
         <meta name="robots" content="noindex,nofollow" />
         <link rel="stylesheet" type="text/css" href="./style/main.css" media="screen">
-        <!-- slick.css : Slider Framework - Quelle: 'https://kenwheeler.github.io/slick/' -->
-        <link rel="stylesheet" type="text/css" href="./dist/slick.css" media="screen">
-        <title>Schuhmanufaktur Formschön</title>
+        <link rel="stylesheet" type="text/css" href="./dist/slick.css" media="screen"><!-- Slider Framework - Quelle: 'https://kenwheeler.github.io/slick/' -->
+        <title>Schuhmanufaktur Formschön - Chronologie</title>
     </head>
     <body>
-
+        <!-- Header : contains the Menu -->
         <header class="page-header">
+
+            <!-- Menu-Bar : top, fixed on every page -->
             <div class="topbar">
                 <div class="topbar-burger-container">
+
+                    <!-- Burgermenu : visible on Mobile -->
                     <div class="topbar-burger">
                         <div class="burger">
                             <div class="bar bar-top"></div>
@@ -28,11 +31,15 @@
                             <div class="bar2 bar-btm"></div>
                         </div>
                     </div>
+
+                    <!-- Menutext-Button : visible on Tablet and Desctop -->
                     <div class="topbar-burger-typo">
                         Menü
                     </div>
                 </div>
             </div>
+
+            <!-- Menu-Overlay -->
             <div class="main-menu-container">
 
                 <a href="index.html">
@@ -40,6 +47,8 @@
                         <img alt="Schuhmanufaktur Formschön Logo" src="./images/logo_white.png" />
                     </div>
                 </a>
+
+                <!-- Closed Burgermenu -->
                 <div class="topbar-burger">
                     <div class="burger">
                         <div class="bar bar-top"></div>
@@ -48,6 +57,7 @@
                     </div>
                 </div>
 
+                <!-- Navigation Items -->
                 <nav class="main-menu">
                     <ul>
                         <li>
@@ -75,7 +85,11 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Main : Main Site Content -->
         <main>
+
+            <!-- Header-Section -->
             <section class="page-header-grey">
                 <div class="page-header-inner">
                     <div class="page-header-lorbeergranz"></div>
@@ -83,6 +97,8 @@
                     <h2>20 Jahre<br>Schuhmanufaktur Formschön</h2>
                 </div>
             </section>
+
+            <!-- Chronologie-Page-Section -->
             <section class="page-chronologie">
                 <div class="page-chronologie-inner">
                     <h2 class="page-subheadline">Meilensteine</h2>
@@ -99,7 +115,7 @@
                         Das WDR-Regionalfernsehen besucht die Manufaktur und porträtiert unsere Arbeit. Das ist der Durchbruch: Viele potenzielle Kunden und Kundinnen werden auf uns aufmerksam – nicht nur im Rheinland.
                     </p>
                     <div class="meilenstein-image-container">
-                        <img alt="2007 Meilenstein" data-src="./images/meilenstein_2007.png" />
+                        <img class="lazyload" alt="2007 Meilenstein" data-src="./images/meilenstein_2007.png" />
                     </div>
 
                     <h4>Mai 2010</h4>
@@ -115,7 +131,7 @@
                         Wir beteiligen uns an der Neuordnung des Berufs „Maßschuhmacher/-in“, damit unser beruflicher Nachwuchs auf der Höhe der Zeit ist.
                     </p>
                     <div class="meilenstein-image-container">
-                        <img alt="2007 Meilenstein" data-src="./images/meilenstein_2015.png" />
+                        <img class="lazyload" alt="2007 Meilenstein" data-src="./images/meilenstein_2015.png" />
                     </div>
 
                     <h4>März 2016</h4>
@@ -131,7 +147,7 @@
                         Wir zeigen bei den „Tagen der Manufakturen“ in Berlin die Fertigung von Maßschuhen.
                     </p>
                     <div class="meilenstein-image-container">
-                        <img alt="2007 Meilenstein" data-src="./images/meilenstein_2017.png" />
+                        <img class="lazyload" alt="2007 Meilenstein" data-src="./images/meilenstein_2017.png" />
                     </div>
 
                     <h4>September 2019</h4>
@@ -147,8 +163,12 @@
                 </div>
             </section>
         </main>
+        
+        <!-- Footer : Site Footer with Contact and Socialmedia Section -->
         <footer id="contact" class="page-footer">
             <div class="page-footer-inner">
+
+                <!-- Footer : Contact -->
                 <div class="contact">
                     <h2>Öffnungszeiten und Kontakt</h2>
                     <p>
@@ -166,38 +186,33 @@
                         <span>www.schuhmanufaktur-formschön.de</span>
                     </p>
                 </div>
+
+                <!-- Footer : Socialmedia Bar -->
                 <div class="footer-bar">
                     <a href="index.html">
                         <img class="footer-logo" alt="Schuhmanufaktur Formschön Logo" data-src="./images/footer_logo.png">
                     </a>
                     <div class="socialmedia-icons">
                         <a target="_blank" href="https://www.instagram.com">
-                            <img alt="Instagram" data-src="./images/instagram.png">
+                            <img class="lazyload" alt="Instagram" data-src="./images/instagram.png">
                         </a>
                         <a target="_blank" href="https://www.youtube.com">
-                            <img alt="Instagram" data-src="./images/youtube.png">
+                            <img class="lazyload" alt="YouTube" data-src="./images/youtube.png">
                         </a>
                         <a target="_blank" href="https://www.snapchat.com">
-                            <img alt="Instagram" data-src="./images/snapchat.png">
+                            <img class="lazyload" alt="Snapchat" data-src="./images/snapchat.png">
                         </a>
                         <a target="_blank" href="https://www.facebook.com">
-                            <img alt="Instagram" data-src="./images/facebook.png">
+                            <img class="lazyload" alt="Facebook" data-src="./images/facebook.png">
                         </a>
                     </div>
                 </div>
             </div>
         </footer>
 
-
-
-        <!--<img class="lazyload" src="./images/Bild_04.jpg" data-src="./images/Bild_03.jpg" alt="3" />
-        <img class="lazyload" src="./images/Bild_03.jpg" data-src="./images/Bild_02.jpg" alt="2" />
-        <img class="lazyload" src="./images/Bild_02.jpg" data-src="./images/Bild_04.jpg" alt="4" />-->
-
-        <!-- Javascript -->
-        <script type="text/javascript" src="./dist/jquery.min.js"></script>
-        <script type="text/javascript" src="./dist/lazysizes.min.js" async=""></script>
-        <script type="text/javascript" src="./dist/slick.min.js"></script>
+        <script type="text/javascript" src="./dist/jquery.min.js"></script><!-- JavaScript Library - Quelle: 'https://jquery.com' -->
+        <script type="text/javascript" src="./dist/lazysizes.min.js" async></script><!-- Image Lazy-Loader Framework - Quelle: 'https://github.com/aFarkas/lazysizes' -->
+        <script type="text/javascript" src="./dist/slick.min.js"></script><!-- Slider Framework - Quelle: 'https://kenwheeler.github.io/slick/' -->
         <script type="text/javascript" src="./script/main.js"></script>
     </body>
 </html>
