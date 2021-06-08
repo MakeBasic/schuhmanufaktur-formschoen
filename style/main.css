@@ -50,6 +50,23 @@ h3 {
   font-weight: normal;
 }
 
+.slick-slide {
+  outline: none;
+}
+
+.draggable-slider {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.draggable-slider:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
 .noscroll .topbar .topbar-logo {
   display: none;
 }
@@ -972,7 +989,12 @@ h2.page-subheadline {
 }
 .hero-section .hero-section-inner-space {
   background-color: #000;
-  height: 30vh;
+  height: 40vh;
+}
+@media only screen and (min-width: 480px) {
+  .hero-section .hero-section-inner-space {
+    height: 36vh;
+  }
 }
 @media only screen and (min-width: 576px) {
   .hero-section .hero-section-inner-space {
@@ -982,7 +1004,7 @@ h2.page-subheadline {
 .hero-section .hero-section-inner {
   position: relative;
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
   background-image: url(../images/hero_bg.png);
   background-color: #000;
   background-size: cover;
@@ -990,16 +1012,32 @@ h2.page-subheadline {
   color: #fff;
   font-weight: 400;
 }
+@media only screen and (min-width: 480px) {
+  .hero-section .hero-section-inner {
+    height: 64vh;
+  }
+}
 @media only screen and (min-width: 576px) {
   .hero-section .hero-section-inner {
     height: 100vh;
     margin-top: 0;
+    background-position: 22%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-section .hero-section-inner {
+    background-position: center;
   }
 }
 .hero-section .hero-section-text {
   position: absolute;
-  margin-top: -23vh;
+  margin-top: -32vh;
   width: 100vw;
+}
+@media only screen and (min-width: 480px) {
+  .hero-section .hero-section-text {
+    margin-top: -29vh;
+  }
 }
 @media only screen and (min-width: 576px) {
   .hero-section .hero-section-text {
@@ -1011,20 +1049,29 @@ h2.page-subheadline {
   font-size: 29px;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 2vh;
   font-weight: 400;
 }
 @media only screen and (min-width: 576px) {
   .hero-section h1 {
-    font-size: 58px;
+    font-size: 40px;
     text-align: center;
     margin: 30px 45px;
+    margin-top: 50px;
     font-weight: 400;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-section h1 {
+    margin: 30px 45px;
+    font-size: 58px;
   }
 }
 .hero-section h3 {
   font-size: 18px;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   color: #909090;
   text-align: center;
 }
@@ -1040,9 +1087,16 @@ h2.page-subheadline {
     display: block;
     position: absolute;
     width: 1px;
+    top: 173px;
+    left: 200px;
+    background-color: #fff;
+    height: 7vh;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-section h3:before {
     top: 197px;
     left: 270px;
-    background-color: #fff;
     height: 8vh;
   }
 }
@@ -1050,12 +1104,19 @@ h2.page-subheadline {
   font-size: 29px;
   font-weight: 400;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2vh;
+  margin-bottom: 10px;
 }
 @media only screen and (min-width: 576px) {
   .hero-section h2 {
     margin-top: 40vh;
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-section h2 {
     font-size: 58px;
+    margin-bottom: 13px;
   }
 }
 .hero-section .logo-icon {
@@ -1074,7 +1135,7 @@ h2.page-subheadline {
     background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 45vh;
-    left: 220px;
+    left: 150px;
     background-color: transparent;
   }
 }
@@ -1099,6 +1160,11 @@ h2.page-subheadline {
     margin-left: 18px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .hero-section .logo-icon {
+    left: 220px;
+  }
+}
 .hero-section .logo-icon img {
   display: none;
 }
@@ -1119,9 +1185,16 @@ h2.page-subheadline {
     display: block;
     position: absolute;
     width: 1px;
-    left: 270px;
+    left: 200px;
     background-color: #fff;
     height: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-section .hero-second-line,
+.hero-section .hero-third-line,
+.hero-section .hero-fourd-line {
+    left: 270px;
   }
 }
 
@@ -1279,12 +1352,11 @@ h2.page-subheadline {
   overflow: hidden;
   display: inline-block;
   font-size: 12px;
-  /*set the size for arrow*/
   width: 40px;
   height: 40px;
   margin-top: -2em;
   top: 50%;
-  z-index: 100;
+  z-index: 99;
 }
 .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider-container .prev-slide:hover,
 .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider-container .next-slide:hover {
@@ -1315,6 +1387,7 @@ h2.page-subheadline {
 @media only screen and (min-width: 768px) {
   .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider-container .jubilaeum-section-slider {
     height: 100vh;
+    min-height: 880px;
     width: 40vw;
   }
 }
@@ -1337,6 +1410,7 @@ h2.page-subheadline {
 @media only screen and (min-width: 768px) {
   .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider-container .jubilaeum-section-slider img {
     height: 100vh !important;
+    min-height: 880px;
     width: 40vw !important;
   }
 }
@@ -1472,36 +1546,41 @@ h2.page-subheadline {
 .vote-section .vote-slider-container {
   position: relative;
 }
-.vote-section .vote-slider-container .prev-vote-slide,
+@media only screen and (min-width: 768px) {
+  .vote-section .vote-slider-container .prev-vote-slide,
 .vote-section .vote-slider-container .next-vote-slide {
-  position: absolute;
-  top: calc(50% - 20px);
-  overflow: hidden;
-  display: inline-block;
-  font-size: 12px;
-  /*set the size for arrow*/
-  width: 40px;
-  height: 40px;
-  margin-top: -2em;
-  top: 50%;
-  z-index: 100;
-  top: calc(50% - 60px);
-}
-.vote-section .vote-slider-container .prev-vote-slide:hover,
+    position: absolute;
+    top: calc(50% - 20px);
+    overflow: hidden;
+    display: inline-block;
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    margin-top: -2em;
+    top: 50%;
+    z-index: 99;
+    top: calc(50% - 60px);
+  }
+  .vote-section .vote-slider-container .prev-vote-slide:hover,
 .vote-section .vote-slider-container .next-vote-slide:hover {
-  cursor: pointer;
+    cursor: pointer;
+  }
 }
-.vote-section .vote-slider-container .prev-vote-slide {
-  left: 12px;
-  border-top: 1px solid #909090;
-  border-left: 1px solid #909090;
-  transform: rotate(-54deg) skew(-20deg);
+@media only screen and (min-width: 768px) {
+  .vote-section .vote-slider-container .prev-vote-slide {
+    left: 12px;
+    border-top: 1px solid #909090;
+    border-left: 1px solid #909090;
+    transform: rotate(-54deg) skew(-20deg);
+  }
 }
-.vote-section .vote-slider-container .next-vote-slide {
-  right: 12px;
-  border-top: 1px solid #909090;
-  border-right: 1px solid #909090;
-  transform: rotate(54deg) skew(20deg);
+@media only screen and (min-width: 768px) {
+  .vote-section .vote-slider-container .next-vote-slide {
+    right: 12px;
+    border-top: 1px solid #909090;
+    border-right: 1px solid #909090;
+    transform: rotate(54deg) skew(20deg);
+  }
 }
 .vote-section .vote-slider-container .vote-slider {
   text-align: center;

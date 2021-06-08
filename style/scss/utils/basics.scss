@@ -21,3 +21,20 @@ h2,
 h3 {
     font-weight: normal;
 }
+
+.slick-slide {
+    outline: none
+}
+
+.draggable-slider {
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.draggable-slider:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}

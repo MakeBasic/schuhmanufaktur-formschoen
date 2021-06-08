@@ -3,7 +3,11 @@
 
     .hero-section-inner-space {
         background-color: $black;
-        height: 30vh;
+        height: 40vh;
+
+        @include bp(small1) {
+            height: 36vh;
+        }
 
         @include bp(small2) {
             height: 0;
@@ -13,7 +17,7 @@
     .hero-section-inner {
         position: relative;
         width: 100vw;
-        height: 70vh;
+        height: 60vh;
         background-image: url(../images/hero_bg.png);
         background-color: $black;
         background-size: cover;
@@ -21,16 +25,29 @@
         color: $white;
         font-weight: 400;
 
+        @include bp(small1) {
+            height: 64vh;
+        }
+
         @include bp(small2) {
             height: 100vh;
             margin-top: 0;
+            background-position: 22%;
+        }
+
+        @include bp(large1) {
+            background-position: center;
         }
     }
 
     .hero-section-text {
         position: absolute;
-        margin-top: -23vh;
+        margin-top: -32vh;
         width: 100vw;
+
+        @include bp(small1) {
+            margin-top: -29vh;
+        }
 
         @include bp(small2) {
             margin-top: 0;
@@ -42,13 +59,20 @@
         font-size: 29px;
         text-align: center;
         margin-top: 20px;
+        margin-bottom: 2vh;
         font-weight: 400;
 
         @include bp(small2) {
-            font-size: 58px;
+            font-size: 40px;
             text-align: center;
             margin: 30px 45px;
+            margin-top: 50px;
             font-weight: 400;
+        }
+
+        @include bp(large1) {
+            margin: 30px 45px;
+            font-size: 58px;
         }
 
     }
@@ -56,7 +80,8 @@
     h3 {
         font-size: 18px;
         font-weight: 400;
-        margin-top: 20px;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
         color: $subheadline-grey;
         text-align: center;
 
@@ -71,9 +96,15 @@
                 display: block;
                 position: absolute;
                 width: 1px;
+                top: 173px;
+                left: 200px;
+                background-color: $white;
+                height: 7vh;
+            }
+
+            @include bp(large1) {
                 top: 197px;
                 left: 270px;
-                background-color: $white;
                 height: 8vh;
             }
         }
@@ -83,24 +114,35 @@
         font-size: 29px;
         font-weight: 400;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 2vh;
+        margin-bottom: 10px;
 
         @include bp(small2) {
             margin-top: 40vh;
+            font-size: 40px;
+        }
+
+        @include bp(large1) {
             font-size: 58px;
+            margin-bottom: 13px;
         }
 
     }
 
     .logo-icon {
         display: none;
+
         @include bp(small2) {
             display: block;
             @include logo-icon;
             position: absolute;
             top: 45vh;
-            left: 220px;
+            left: 150px;
             background-color: $transparent;
+        }
+
+        @include bp(large1) {
+            left: 220px;
         }
 
         img {
@@ -120,9 +162,13 @@
             display: block;
             position: absolute;
             width: 1px;
-            left: 270px;
+            left: 200px;
             background-color: $white;
             height: auto;
+        }
+
+        @include bp(large1) {
+            left: 270px;
         }
     }
 

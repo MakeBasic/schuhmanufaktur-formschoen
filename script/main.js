@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+    console.log( "Willkommen auf der Schuhmanufaktur Förmschön Website!" );
+    console.log( "made by Nikolas Leander Schmidt" );
     if($('.hero-section-inner').length > 0) {
         heroResize();
     }
@@ -39,12 +40,12 @@ $('.vote-slider').slick({
 });
 
 
-function closeMenu(el) {
-    $(el).toggleClass('cross');
+function closeMenu(clickedElement) {
+    $(clickedElement).toggleClass('cross');
     $('html').toggleClass('noscroll');
     $('.main-menu-container').toggleClass('main-menu-opened');
 
-    if ($(el).hasClass("cross")) {
+    if ($(clickedElement).hasClass("cross")) {
         $('.topbar-burger-typo').html("Zurück");
     } else {
         $('.topbar-burger-typo').html("Menü");
@@ -62,7 +63,7 @@ function heroResize() {
   $('.hero-third-line').css('top', topLogo + 130);
   $('.hero-third-line').css('height', topH2 - topLogo - 130);
 
-  $('.hero-fourd-line').css('top', (topH2 - $('.hero-section-inner h2').height) - 630);
+//   $('.hero-fourd-line').css('top', topH2 + (topH2 - $('.hero-section-inner h2').height()) - 630);
   $('.hero-fourd-line').css('height', topLogo - topH3 - 80);
 }
 

@@ -133,6 +133,7 @@
     
                 @include bp(medium1) {
                     height: 100vh;
+                    min-height: 880px;
                     width: 40vw;
                 }
     
@@ -152,6 +153,7 @@
     
                     @include bp(medium1) {
                         height: 100vh !important;
+                        min-height: 880px;
                         width: 40vw !important;
                     }
     

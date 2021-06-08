@@ -24,16 +24,22 @@
 
         .prev-vote-slide,
         .next-vote-slide {
-            @include slider-arrow-setup;
-            top: calc(50% - 60px);
+            @include bp(medium1) {
+                @include slider-arrow-setup;
+                top: calc(50% - 60px);
+            }
         }
 
         .prev-vote-slide {
-            @include slider-arrow-prev;
+            @include bp(medium1) {
+                @include slider-arrow-prev;
+            }
         }
 
         .next-vote-slide {
-            @include slider-arrow-next;
+            @include bp(medium1) {
+                @include slider-arrow-next;
+            }
         }
 
         .vote-slider {
