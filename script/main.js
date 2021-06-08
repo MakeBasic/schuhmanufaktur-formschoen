@@ -73,7 +73,7 @@ function heroResize() {
   $('.hero-second-line').css('height', topLogo - topH3 - 80);
 
   $('.hero-third-line').css('top', topLogo + 130);
-  $('.hero-third-line').css('height', topH2 - topLogo - 130);
+  $('.hero-third-line').css('height', topH2 - topLogo - 142);
 
   $('.hero-fourd-line').css('height', topLogo - topH3 - 80);
 }

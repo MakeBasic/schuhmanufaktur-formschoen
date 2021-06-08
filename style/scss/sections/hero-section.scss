@@ -21,18 +21,19 @@
         background-image: url(../images/hero_bg.png);
         background-color: $black;
         background-size: cover;
-        background-position: center;
+        background-position: 58%;
         color: $white;
         font-weight: 400;
 
         @include bp(small1) {
             height: 64vh;
+            background-position: 82%;
         }
 
         @include bp(small2) {
             height: 100vh;
             margin-top: 0;
-            background-position: 22%;
+            background-position: 30%;
         }
 
         @include bp(large1) {
@@ -115,7 +116,7 @@
         font-weight: 400;
         text-align: center;
         margin-top: 2vh;
-        margin-bottom: 10px;
+        margin-bottom: 17px;
 
         @include bp(small2) {
             margin-top: 40vh;
@@ -124,7 +125,7 @@
 
         @include bp(large1) {
             font-size: 58px;
-            margin-bottom: 13px;
+            margin-bottom: 22px;
         }
 
     }

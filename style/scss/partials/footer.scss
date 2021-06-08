@@ -70,9 +70,18 @@
                 align-items: center;
                 justify-content: center;
 
+                a:hover > img {
+                    filter: grayscale(0);
+                }
+
                 img {
                     padding: 8px;
-                    height: 30px;
+                    height: 35px;
+                    filter: brightness(93%) contrast(109%) grayscale(100%);
+
+                    &:hover {
+                        filter: grayscale(0);
+                    }
                 }
             }
 

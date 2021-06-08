@@ -505,9 +505,16 @@ h2.page-subheadline {
   align-items: center;
   justify-content: center;
 }
+.page-footer .page-footer-inner .footer-bar .socialmedia-icons a:hover > img {
+  filter: grayscale(0);
+}
 .page-footer .page-footer-inner .footer-bar .socialmedia-icons img {
   padding: 8px;
-  height: 30px;
+  height: 35px;
+  filter: brightness(93%) contrast(109%) grayscale(100%);
+}
+.page-footer .page-footer-inner .footer-bar .socialmedia-icons img:hover {
+  filter: grayscale(0);
 }
 @media only screen and (min-width: 576px) {
   .page-footer .page-footer-inner .footer-bar {
@@ -1059,20 +1066,21 @@ h2.page-subheadline {
   background-image: url(../images/hero_bg.png);
   background-color: #000;
   background-size: cover;
-  background-position: center;
+  background-position: 58%;
   color: #fff;
   font-weight: 400;
 }
 @media only screen and (min-width: 480px) {
   .hero-section .hero-section-inner {
     height: 64vh;
+    background-position: 82%;
   }
 }
 @media only screen and (min-width: 576px) {
   .hero-section .hero-section-inner {
     height: 100vh;
     margin-top: 0;
-    background-position: 22%;
+    background-position: 30%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1156,7 +1164,7 @@ h2.page-subheadline {
   font-weight: 400;
   text-align: center;
   margin-top: 2vh;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 @media only screen and (min-width: 576px) {
   .hero-section h2 {
@@ -1167,7 +1175,7 @@ h2.page-subheadline {
 @media only screen and (min-width: 1024px) {
   .hero-section h2 {
     font-size: 58px;
-    margin-bottom: 13px;
+    margin-bottom: 22px;
   }
 }
 .hero-section .logo-icon {
