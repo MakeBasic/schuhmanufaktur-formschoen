@@ -1,3 +1,4 @@
+/* Header */
 .page-header-grey {
     position: relative;
     height: 490px;
@@ -58,23 +59,23 @@
             position: absolute;
             width: 90vw;
             height: 90vh;
-            top: -160px;
-            right: -40%;
+            top: -14%;
+            right: -43%;
             transform: translateX(-50%);
 
             @include bp(small1) {
-                top: -214px;
+                top: 0;
             }
 
             @include bp(small2) {
-                width: 70vw;
-                height: 70vh;
-                top: -100px;
-                right: -19%;
+                width: 90vw;
+                height: 90vh;
+                top: 20px;
+                right: -42%;
             }
 
             @include bp(medium1) {
-                top: 0;
+                top: 4vw;
             }
         }
     }

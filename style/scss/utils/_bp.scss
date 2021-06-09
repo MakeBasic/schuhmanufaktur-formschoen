@@ -1,4 +1,4 @@
-
+/* Breakpoint Mixin */
 @mixin respond($value: null, $minmax: null, $property: null, $orientation: null) {
     $query: ' only screen';
     $query-minmax: null;

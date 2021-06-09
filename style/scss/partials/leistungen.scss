@@ -1,3 +1,4 @@
+/* Leistungen Page */
 .page-leistungen {
     position: relative;
     background-color: $background-lightgrey;
@@ -70,8 +71,12 @@
                 max-width: 100%;
 
                 @include bp(medium1) {
-                    width: 40vw;
+                    width: 36vw;
                     max-width: 484px;
+                }
+
+                @include bp(medium3) {
+                    width: 40vw;
                 }
             }
         }

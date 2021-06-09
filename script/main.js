@@ -4,8 +4,9 @@ $( document ).ready(function() {
     if($('.hero-section-inner').length > 0) {
         heroResize();
     }
-
-    AOS.init();
+    if($('.page-leistungen').length > 0) {
+        AOS.init();
+    }
 });
 
 /* Menu Click Events */
