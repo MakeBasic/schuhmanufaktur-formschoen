@@ -65,9 +65,12 @@
             .socialmedia-icons {
                 display: block;
                 margin: auto;
-                display: flex;
                 align-items: center;
                 justify-content: center;
+                
+                @include bp(small2) {
+                    display: flex;
+                }
 
                 a:hover > img {
                     filter: grayscale(0);
