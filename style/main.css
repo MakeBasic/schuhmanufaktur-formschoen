@@ -527,7 +527,6 @@ h2.page-subheadline {
 
 .page-chronologie {
   position: relative;
-  width: 100vw;
   background-color: #FAFAFA;
 }
 .page-chronologie .page-chronologie-inner {
@@ -686,7 +685,6 @@ h2.page-subheadline {
 
 .page-leistungen {
   position: relative;
-  width: 100vw;
   background-color: #FAFAFA;
 }
 .page-leistungen .page-leistungen-inner {
@@ -805,7 +803,6 @@ h2.page-subheadline {
 
 .page-massschuhe {
   position: relative;
-  width: 100vw;
   background-color: #FAFAFA;
 }
 .page-massschuhe .page-massschuhe-inner {
@@ -928,7 +925,6 @@ h2.page-subheadline {
 
 .page-pflegetipps {
   position: relative;
-  width: 100vw;
   background-color: #FAFAFA;
 }
 .page-pflegetipps .page-pflegetipps-inner {
