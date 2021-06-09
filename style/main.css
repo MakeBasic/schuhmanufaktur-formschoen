@@ -1059,7 +1059,6 @@ h2.page-subheadline {
 }
 .hero-section .hero-section-inner {
   position: relative;
-  width: 100vw;
   height: 60vh;
   background-image: url(../images/hero_bg.png);
   background-color: #000;
@@ -1438,7 +1437,6 @@ h2.page-subheadline {
 .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-slider-container .jubilaeum-section-slider {
   display: block;
   height: 400px;
-  width: 100vw;
   overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
@@ -1498,7 +1496,6 @@ h2.page-subheadline {
 .colmenu-section .colmenu-section-inner .colmenu-item {
   display: block;
   height: 25vh;
-  width: 100vw;
   display: flex;
   align-items: flex-end;
 }
