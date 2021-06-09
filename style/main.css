@@ -35,6 +35,9 @@ html.noscroll {
   overflow: hidden;
   background-color: #000; }
 
+ol {
+  padding: 0; }
+
 li {
   list-style: none; }
 
@@ -314,7 +317,7 @@ h2.page-subheadline {
 .page-footer .page-footer-inner {
   position: relative; }
   @media only screen and (min-width: 480px) {
-    .page-footer .page-footer-inner:before {
+    .page-footer .page-footer-inner.footer-line:before {
       display: block;
       content: "";
       position: absolute;
@@ -325,7 +328,7 @@ h2.page-subheadline {
       height: 100px;
       background-color: #909090; } }
   @media only screen and (min-width: 480px) and (min-width: 768px) {
-    .page-footer .page-footer-inner:before {
+    .page-footer .page-footer-inner.footer-line:before {
       top: -75px;
       height: 150px; } }
 
@@ -723,25 +726,41 @@ h2.page-subheadline {
     .page-pflegetipps .page-pflegetipps-inner .pflegetipps-list {
       text-align: center; }
       .page-pflegetipps .page-pflegetipps-inner .pflegetipps-list li {
-        list-style: inherit;
-        padding: 30px; }
-    .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images {
-      display: block; }
-      @media only screen and (min-width: 576px) {
-        .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images {
-          display: flex; } }
-      .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images .pflegetipps-image-element {
-        width: 100vw;
-        height: 250px;
-        background-size: cover; }
+        padding: 35px;
+        position: relative;
+        counter-increment: my-awesome-counter;
+        font-size: 15px; }
         @media only screen and (min-width: 576px) {
-          .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images .pflegetipps-image-element {
-            width: 50vw;
-            height: 400px; } }
-      .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images .pflegetipps-image-1 {
-        background-image: url(./../images/menu_pflegetipps.png); }
-      .page-pflegetipps .page-pflegetipps-inner .pflegetipps-images .pflegetipps-image-2 {
-        background-image: url(./../images/m_schuh_6.jpg); }
+          .page-pflegetipps .page-pflegetipps-inner .pflegetipps-list li {
+            font-size: 18px; } }
+        @media only screen and (min-width: 768px) {
+          .page-pflegetipps .page-pflegetipps-inner .pflegetipps-list li {
+            font-size: 20px; } }
+        .page-pflegetipps .page-pflegetipps-inner .pflegetipps-list li:before {
+          content: counter(my-awesome-counter) ". ";
+          color: #909090;
+          font-weight: bold;
+          position: absolute;
+          top: 0;
+          left: 49%; }
+  .page-pflegetipps .page-pflegetipps-gallery-inner .pflegetipps-images {
+    display: block; }
+    @media only screen and (min-width: 576px) {
+      .page-pflegetipps .page-pflegetipps-gallery-inner .pflegetipps-images {
+        display: flex; } }
+    .page-pflegetipps .page-pflegetipps-gallery-inner .pflegetipps-images .pflegetipps-image-element {
+      width: 100vw;
+      height: 250px;
+      background-size: cover; }
+      @media only screen and (min-width: 576px) {
+        .page-pflegetipps .page-pflegetipps-gallery-inner .pflegetipps-images .pflegetipps-image-element {
+          width: 50vw;
+          height: 400px; } }
+    .page-pflegetipps .page-pflegetipps-gallery-inner .pflegetipps-images .pflegetipps-image-1 {
+      background-image: url(./../images/menu_pflegetipps.png); }
+    .page-pflegetipps .page-pflegetipps-gallery-inner .pflegetipps-images .pflegetipps-image-2 {
+      background-image: url(./../images/m_schuh_6.jpg);
+      background-position: center; }
 
 /* Impressum Page */
 .page-impressum {
@@ -1028,7 +1047,7 @@ h2.page-subheadline {
         @media only screen and (min-width: 768px) {
           .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p {
             margin-top: 180px; } }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1024px) {
           .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p:after {
             display: block;
             position: absolute;
@@ -1040,7 +1059,7 @@ h2.page-subheadline {
             background-color: #fff;
             top: 445px;
             height: 70px; } }
-  @media only screen and (min-width: 768px) and (min-width: 576px) {
+  @media only screen and (min-width: 1024px) and (min-width: 576px) {
     .jubilaeum-section .jubilaeum-section-inner .jubilaeum-section-text p:after {
       left: 200px; } }
 

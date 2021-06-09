@@ -3,9 +3,11 @@
     .page-footer-inner {
         position: relative;
 
-        &:before {
-            @include bp(small1) {
-                @include section-inner-before-line;
+        &.footer-line {
+            &:before {
+                @include bp(small1) {
+                    @include section-inner-before-line;
+                }
             }
         }
 

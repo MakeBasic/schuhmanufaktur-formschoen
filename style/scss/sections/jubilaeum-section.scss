@@ -93,7 +93,7 @@
                 }
 
                 &:after {
-                    @include bp(medium1) {
+                    @include bp(large1) {
                         @include after-line;
                         top: 445px;
                         height: 70px;

@@ -10,7 +10,9 @@ html.noscroll {
     overflow: hidden;
     background-color: $black;
 }
-
+ol {
+    padding: 0;
+}
 li {
     list-style: none;
 }

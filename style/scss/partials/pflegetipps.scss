@@ -16,11 +16,26 @@
             text-align: center;
 
             li {
-                list-style: inherit;
-                padding: 30px;
-            }
-        }
+                padding: 35px;
+                position: relative;
+                counter-increment: my-awesome-counter;
+                @include text-normal;
 
+                &:before {
+                    content: counter(my-awesome-counter) ". ";
+                    color: $grey-number;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 0;
+                    left: 49%;
+                }
+            }
+
+
+        }
+    }
+
+    .page-pflegetipps-gallery-inner {
         .pflegetipps-images {
             display: block;
 
@@ -46,6 +61,7 @@
 
             .pflegetipps-image-2 {
                 background-image: url(./../images/m_schuh_6.jpg);
+                background-position: center;
             }
         }
     }
